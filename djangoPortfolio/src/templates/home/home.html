@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+
+{% load static %}
+{% load i18n %}
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
+    <title>Homepage</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-inner">
+            <nav>
+                <div class="left"><h1>Manon SAMSON</h1></div>
+                <div class="right">
+                    <a href="#about"><span> {% translate "Profil" %}</span></a>
+                    <a href="#projects"><span> {% translate "Projets" %}</span></a>
+                    <a href="#contact"><span> Contact </span></a>
+                </div>
+
+
+
+                <label class="toggleSwitch nolabel" onclick="">
+                  <input type="checkbox" id="language-toggle" checked />
+                  <a></a>
+                  <span>
+                    <span class="left-span">FR</span>
+                    <span class="right-span">EN</span>
+                  </span>
+                </label>
+
+                {% get_current_language as LANGUAGE_CODE %}
+
+
+                <script type="text/javascript">
+
+                    document.addEventListener('DOMContentLoaded', function() {
+                    const toggle = document.getElementById('language-toggle');
+                    const currentLanguage = "{{ LANGUAGE_CODE }}";  // Langue actuelle
+
+                    // Initialiser le switch selon la langue actuelle
+                    toggle.checked = currentLanguage === 'en';
+
+                    toggle.addEventListener('change', function() {
+                        const newLanguage = toggle.checked ? 'en' : 'fr';
+                        const currentPath = window.location.pathname.replace(/^\/(en|fr)?\/?/, '/');
+
+                        // Rediriger vers la langue sélectionnée, sans préfixe pour le français
+                        const newUrl = newLanguage === 'fr' ? currentPath : `/${newLanguage}${currentPath}`;
+                        window.location.href = newUrl;
+                    });
+                });
+
+                </script>
+
+
+
+            </nav>
+
+        </div>
+    </div>
+
+
+    <main>
+        <!-- section 1 about me -->
+        <section class="about-me" id="about">
+            <div class="text">
+                <h1>{% translate "Développeuse / Data Scientist" %}</h1>
+                <p> {% translate "Forte d'une première expérience professionnelle en intelligence artificielle," %} </br> {% translate "curieuse, autonome et flexible," %} </br>
+                    {% translate "je suis déterminée à intégrer une équipe et mettre en pratique mes compétences." %} </br> </br>
+                {% blocktrans %} Depuis le lycée, j'ai acquis une expertise en Python, notamment en développement de sites web et en solutions data. Durant mes études, j’ai également travaillé avec Java et SQL pendant 5 ans, en plus de renforcer mes compétences en intelligence artificielle et analyse de données sur les deux dernières années. {% endblocktrans %}</p>
+                <div class="links">
+                    <a href="https://github.com/PikaManon" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i><span> Github</span></a>
+            <a href="https://www.linkedin.com/in/manon-samson-436a35254/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i><span> Linkedin</span></a>
+                </div>
+            </div>
+            <div class="headshot">
+
+                <img src="{% static 'images/headshot.webp' %}" alt="Manon Samson headshot">
+            </div>
+
+
+        </section>
+
+        <!-- section 2 projects -->
+        <section id="projects"></section>
+
+
+
+        <section class="IA-data">
+            <div class="text"><h1>{% translate "Projets IA / Data" %} </h1></div>
+             <div class="slick-carousel">
+
+          <div data-description="<h1> {% translate 'Projet : Voiture Autonome' %} </h1> </br></br>
+          <p> {% blocktrans %}Lors de ma première année de master informatique parcours intelligence artificielle, j'ai choisi comme projet sur l'année de rendre autonome une voiture modèle réduit afin qu'elle puisse accomplir par elle-même des tours de circuit : se diriger et adapter sa vitesse. Nous étions une équipe de 3 personnes. {% endblocktrans %}</p>
+          </br>
+          <p>  {% translate 'Nous devions :' %}
+           </br>
+           - {% translate 'améliorer la structure de voiture modèle réduit existante,' %} </br>
+           - {% translate 'configurer la Raspberry PI 4 avec notamment les différents langages et librairies,' %}</br>
+           - {% blocktrans %}accumuler assez de données annotées pour ensuite entraîner des intelligences artificielles qui permettront à la voiture d'être autonome {% endblocktrans %} </br>
+           - {% translate 'et obtenir les meilleurs résultats possible.' %} </br></p>
+          </br>
+          <p> {% blocktrans %}Dans ce projet, j'ai participé à {% endblocktrans %}:
+          </br>- {% translate 'la configuration de la voiture,' %}
+          </br>- {% blocktrans %}à l'acquisition et à l'annotation automatique des données sur le circuit (des images des virages), {% endblocktrans %}
+          </br>- {% blocktrans %}j'ai fine-tuné deux modèles de vision par ordinateur pour des tâches de classification : VGG16 et MobileNet, pré-entraîné sur ImageNet. J'ai pour cela utilisé Python et ses librairies TensorFlow et Keras.{% endblocktrans %}
+          </br>- {% blocktrans %}Puis j'ai intégrer ces modèles sur la Raspberry PI 4.{% endblocktrans %}
+          </br>- {% blocktrans %}Enfin, pour nous organiser, nous avons utilisé un Diagramme de Gantt.{% endblocktrans %}</p>
+           </br>
+           <p>{% translate 'Comme résultats:' %}
+            </br>- {% blocktrans %}le MobileNet était bien plus rapide que le VGG16 pour l'inférence sur la Raspberry PI. (25 au lieu de 69 time per inference step){% endblocktrans %}
+            </br>- {% blocktrans %}Le MobileNet a obtenu comme meilleurs résultats sur l'ensemble de test : 80,2% d'accuracy sur la prédiction des directions (virage à droite, ligne droite ou virage à gauche).{% endblocktrans %}
+            </br>- {% blocktrans %}L'ajout de la prédiction de la vitesse était prévu pour les prochaines étapes.{% endblocktrans %}</p>  ">
+              <h1 class="carousel-title">{% translate "Voiture Autonome" %}</h1>
+              <img src="{% static 'images/voiture_autonome.webp' %}" alt="Slide 1">
+          </div>
+
+          <div data-description="<h1> {% translate 'Projet : Normalisation des scores' %} </h1> </br> </br>
+            <p> {% blocktrans %}Lors de ma 2e année de master j'ai effectuée une alternance au Laboratoire Informatique d'Avignon. Dans ce laboratoire, ils travaillent sur la vérification du locuteur : on a deux audio et on doit savoir s'ils proviennent de la même personne ou non. Une IA va donc donner un score et en fonction du seuil en vigueur les deux audio seront considéré comme provenant de la même personne ou non. Le seuil en vigueur est fixé en fonction de l'apprentissage de l'IA. {% endblocktrans %}</p> </br>
+            <p> {% blocktrans %}Un de mes tuteurs m'a donné comme mission d'explorer de nouvelles techniques de normalisation des scores de ces systèmes de vérification du locuteur. La normalisation des scores a pour but de mieux séparer les scores des couples provenant de la même personne de ceux où ce n'est pas le cas pour obtenir de meilleurs résultats, une meilleure accuracy du système, notamment quand on a de petits ensemble de données.{% endblocktrans %} </p> </br>
+            <p> {% blocktrans %}Ainsi, j'ai : {% endblocktrans %}</br>
+            - {% blocktrans %}lu différents articles scientifiques sur des méthodes de normalisation des scores (AD-Norm, AS-Norm, S-Norm, LLN),{% endblocktrans %}</br>
+            - {% blocktrans %}implémenté en python ces méthodes existantes, essayé de les améliorer et d'en construire de nouvelles en me basant dessus. {% endblocktrans %}</br>
+            - {% blocktrans %}J'ai également étudié l'impact du fine-tuning : si la normalisation peut le remplacer ou le compléter.{% endblocktrans %} </br>
+            - {% blocktrans %}Enfin, j'ai transposer ces méthodes au domaine de la détection des fake audio dans le contexte du challenge ASVSpoof2024. {% endblocktrans %}
+             </p> </br>
+            <p> {% blocktrans %}Résultats :{% endblocktrans %} </br>
+            - {% blocktrans %}Certaines techniques sont plus robuste que d'autres, mais le choix de la normalisation va quand même dépendre du jeu de données.{% endblocktrans %} </br>
+            - {% blocktrans %}La normalisation peut compléter le fine-tuning (on peut obtenir des gains supérieurs à 10%), mais le fine-tuning seul reste plus avantageux que la normalisation seule.{% endblocktrans %}
+            </p>
+
+          ">
+              <h1 class="carousel-title">{% translate "Normalisation des scores" %}</h1>
+              <img src="{% static 'images/lia.png' %}" alt="Slide 2">
+          </div>
+          <div data-description="<h1> {% blocktrans %}Projet : Transposition de l'EfficientNet à la vérification du locuteur {% endblocktrans %} </h1> </br> </br>
+            <p>{% blocktrans %}Lors de ma 2e année de master j'ai effectuée une alternance au Laboratoire Informatique d'Avignon. Dans ce laboratoire, ils travaillent sur la vérification du locuteur : on a deux audio et on doit savoir s'ils proviennent de la même personne ou non. Le modèle état de l'art dans ce domaine est le ResNet, un réseau de neurones qui vient initialement du domaine de l'image.  {% endblocktrans %}</p> </br>
+            <p>{% blocktrans %} Un de mes tuteurs m'a donné comme mission de transposer à la vérification du locuteur un autre modèle d'IA dans le domaine de l'image plus récent et performant que le ResNet, afin d'espérer de meilleurs résultats sur nos ensemble de données.{% endblocktrans %} </p> </br>
+            <p> {% translate 'Ainsi,'%}</br>
+            -{% blocktrans %}j'ai lu différents articles scientifiques pour choisir le modèle d'IA. Ma veille technologique s'est conclut sur l'EfficientNet en raison de ses performances et de sa rapidité/légèreté.{% endblocktrans %} </br>
+            -{% blocktrans %}En PyTorch, j'ai adapté son architecture au domaine de la vérification du locuteur : en m'inspirant du ResNet, j'ai ajusté les tailles d'entrées et de sortie, modifier et supprimer certaines couches de neurones, tester d'autres méthodes de pooling… {% endblocktrans %}
+            </p> </br>
+            <p>{% blocktrans %}Résultat : Malgré tous mes efforts, l'EfficientNet n'est pas arrivé à surpasser les résultats du ResNet. Son architecture ne s'adapte pas aussi bien à la vérification du locuteur. {% endblocktrans %}</p>
+          ">
+              <h1 class="carousel-title">{% translate "EfficientNet" %}</h1>
+              <img src="{% static 'images/lia.png' %}" alt="Slide 3">
+          </div>
+            <div data-description="
+            <h1> {% blocktrans %}Projet : Analyse de sentiments sur AlloCiné {% endblocktrans %} </h1> </br> </br>
+            <p>{% blocktrans %}Durant ma première année de master, j'ai effectué plusieurs projets en analyse de sentiments dont un sur les commentaires AlloCine. Une intelligence artificielle va déterminer si un commentaire est positif, négatif ou neutre.{% endblocktrans %}</p> </br>
+            <p>{% blocktrans %} Les corpus de données étaient fournis (dev, train, test). {% endblocktrans %} </br>
+             {% translate 'Je devais ainsi :'%}</br>
+            -{% blocktrans %} nettoyer et analyser les bases de données utilisés,  {% endblocktrans %} </br>
+            -{% blocktrans %}  mettre en place plusieurs modèles, qu'ils soient à base de connaissance (lexique de sentiment qui va permettre de calculer le score d'un document en fonction des mots qu'il contient) ou à base d'apprentissage (algorithmes d'apprentissage automatique, nécessite un corpus annoté pour réaliser un apprentissage supervisé),  {% endblocktrans %} </br>
+            -{% blocktrans %} et atteindre les meilleurs résultats possibles. {% endblocktrans %}
+            </p> </br>
+            <p> {% blocktrans %} J'ai ainsi préparées les données en supprimant tout ce qui est jugé comme non pertinent pour cette tâche : {% endblocktrans %} </br>
+            - {% blocktrans %} j'ai enlevé les lignes qui contiennent trop d'informations manquantes,{% endblocktrans %} </br>
+            - {% blocktrans %} j'ai enlevé les lignes dont le commentaire n'était pas en français,{% endblocktrans %} </br>
+            - {% blocktrans %} j'ai supprimé les accents, la casse, la ponctuation...{% endblocktrans %} </br>
+            - {% blocktrans %} j'ai procédé si besoin à des étapes de tokenisation, stemming, lemmatisation...{% endblocktrans %} </br>
+            {% blocktrans %} J'ai analysé les données via le logiciel ElasticSearch afin d'observer la distribution des données, s'assurer que les classes étaient bien équilibrées. J'ai également mis en place un script Python calculant les corrélations de Pearson et Spearman avec les librairies matplotlib, scipy et seaborn.{% endblocktrans %} </br>
+            {% blocktrans %} J'ai utilisé : {% endblocktrans %} </br>
+            - {% blocktrans %} un SVM (Support Vector Machine) avec des données sous forme de sacs de mots pondérés par les scores TF-IDF (Term Frequency-Inverse Document Frequency), {% endblocktrans %} </br>
+             - {% blocktrans %} un CNN (Convolutional Neural Network) dont les données sont sous forme de plongements lexicaux (word embeddings, word2vec, skip-gram){% endblocktrans %} </br>
+              - {% blocktrans %} et un CamemBERT (camembert-base sur HuggingFace) fine-tuné sur les données d'AlloCiné{% endblocktrans %}
+            </p></br>
+            <p>{% blocktrans %}Le modèle le plus performant est CamemBERT puis vient le SVM et enfin le CNN, ils ont une meilleure accuracy respective sur l'ensemble de test de 84%, 79% et 74%. Ces résultats étaient en adéquation avec l'état de l'art. Le SVM est particulièrement performant pour une méthode ne comprenant pas de réseau de neurones et le CNN peut peut-être être amélioré en testant d'autres configurations. {% endblocktrans %}
+            ">
+                <h1 class="carousel-title">{% translate "Analyse de sentiments" %}</h1>
+                <img src="{% static 'images/allocine.png' %}" alt="Slide 4">
+            </div>
+          <div data-description=" <h1> {% blocktrans %} Participation aux 24h pour coder{% endblocktrans %}</h1> </br>
+                <p> {% blocktrans %}Sur mon temps libre, durant la 2e année de mon master en informatique, j'ai participé au 24h pour coder 2e édition organisé par le BDE de mon établissement. Le sujet libre de ces 24h pour coder était de réaliser une application contenant une intelligence artificielle.{% endblocktrans %}</p> </br>
+                 <p> {% blocktrans %}Avec mon équipe, 'Les Lovelaces' nous avons choisi de réaliser 'Learn Mate' une interface web (ReactJS pour le front, NodeJS pour le back et API en Python) permettant de générer des annales et des questions de cours à partir de documents PDF. Un minuteur pour simuler les conditions d'examen et une correction est intégrée. Le but était d'obtenir plus d'annales pour les étudiants de toutes disciplines et permettre un entraînement personnalisé. {% endblocktrans %}</p> </br>
+                  <p> {% blocktrans %}J'ai été en charge de la partie IA.
+J'ai choisi et mis en place deux modèles d'intelligence artificielle depuis Hugging Face : une première (pdf-to-text) qui transforme le PDF en texte et une deuxième (t5-base-question-generator) qui génère les questions/réponses.{% endblocktrans %}</p> </br>
+                   <p> {% blocktrans %} En mettant en pratique mes connaissances en Python et en IA, j'ai obtenu la 2e place avec mon équipe. Evidemment, dû au peu de temps imparti, nous avions beaucoup de pistes d'amélioration : améliorer les performances de l'intelligence artificielle (fine-tune, en utiliser d'autres…), intégrer un planning de révision et de la reconnaissance vocale pour pouvoir s'entraîner à l'oral.{% endblocktrans %}</p> </br>
+            ">
+              <h1 class="carousel-title">{% translate "24h pour coder" %}</h1>
+              <img src="{% static 'images/learnmate.png' %}" alt="Slide 5">
+          </div>
+
+        </div>
+
+
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+
+        <!-- Pop-Up -->
+        <div id="image-popup" class="popup">
+            <span class="close">&times;</span>
+            <div class="popup-content">
+                <p id="popup-description"></p>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+          $(document).ready(function(){
+              $('.slick-carousel').slick({
+
+                  slidesToScroll: 1,
+                  autoplay: true,
+                  autoplaySpeed: 2000,
+                  dots: true,
+                  infinite: true,
+                  slidesToShow: 3,
+                  adaptiveHeight: false,
+                  arrows: false,
+
+              });
+
+                // Événement de clic sur chaque image du carrousel
+                $('.slick-carousel div').on('click', function() {
+                    var description = $(this).data('description'); // Récupère la description
+                    $('#popup-description').html(description); // Met à jour le contenu du pop-up
+                    $('#image-popup').fadeIn(); // Affiche le pop-up
+                });
+
+
+                $(document).on('click', function(event) {
+        // Vérifie si le clic a été fait en dehors de la zone du pop-up
+        if (!$(event.target).closest('#image-popup .popup-content').length && !$(event.target).closest('.slick-carousel').length) {
+            $('#image-popup').fadeOut(); // Cache le pop-up
+        }
+    });
+          });
+        </script>
+
+
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+    var navbarHeight = $('.navbar').outerHeight();
+    $('.slick-carousel').css('margin-top', navbarHeight);
+});
+        </script>
+
+
+
+
+
+
+
+
+
+        <section class="python">
+            <div class="text"><h1>{% translate "Projets Python" %} </h1></div>
+             <div class="slick-carousel">
+
+          <div data-description="<h1>{% blocktrans %} Projet : Toolkit en vérification du locuteur {% endblocktrans %} </h1> </br>
+             <p>{% blocktrans %}Lors de ma 2e année de master informatique j'ai effectuée une alternance au Laboratoire Informatique d'Avignon. Dans ce laboratoire, ils travaillent sur la vérification du locuteur : on a deux audio et on doit savoir s'ils proviennent de la même personne ou non.{% endblocktrans %} </p> </br>
+             <p>{% blocktrans %}Un de mes tuteurs m'a donné comme mission de participer à la mise en place d'un toolkit en Python permettant un cadre unifié dans lequel chaque utilisateur peut créer et évaluer, initialiser de la même façon son système de vérification du locuteur en utilisant les méthodes les plus récentes de l'état de l'art. Le toolkit se devait ainsi d'être le plus facile d'utilisation possible, donc avoir un code propre et des performances rapides. Je travaillais sur la partie mise en place de grands ensemble de données et leur analyse tandis qu'un de mes collègues, lui aussi alternant, se chargeait de la partie mise en place du système de vérification du locuteur.{% endblocktrans %} </p> </br>
+             <p>{% blocktrans %}Ainsi, j'ai implémenté plusieurs fonctions en Python, tout en respectant les bonnes pratiques de développement : mise en place de design pattern, optimisation du code… {% endblocktrans %} </br>
+             {% blocktrans %} Des algorithmes : {% endblocktrans %} </br>
+             - {% blocktrans %} qui téléchargeaient et traitaient automatiquement des données audio, {% endblocktrans %} </br>
+             - {% blocktrans %} qui vérifient le bon téléchargement via les fonctions de hachage,{% endblocktrans %} </br>
+             - {% blocktrans %} d'autres qui calculaient des statistiques sur ces données{% endblocktrans %} </br>
+             - {% blocktrans %} et d'autres encore qui permettaient de visualiser ces données grâce à la bibliothèque MatPlotLib.{% endblocktrans %} </br>
+             - {% blocktrans %} J'ai également mis en place une documentation de ce toolkit et le code était mis sur Git.{% endblocktrans %}
+             </p> </br>
+             <p>{% blocktrans %}Résultat : J'ai pu mener à bien ce projet de toolkit, il a été fini dans les temps : j'avais le semestre pour le terminer.{% endblocktrans %} </p>
+          ">
+              <h1 class="carousel-title">{% translate "Toolkit en vérification du locuteur" %}</h1>
+              <img src="{% static 'images/lia.png' %}" alt="Slide 1">
+          </div>
+
+          <div data-description="<h1> {% blocktrans %} Projet : Compilateur Mini-Pascal {% endblocktrans %} </h1> </br>
+            <p> {% blocktrans %} Durant ma 3e année de licence informatique, j'ai eu un cours consistant en un projet d'un semestre visant à mettre en place un compilateur mini-Pascal en Python. {% endblocktrans %} </p></br>
+            <p> {% blocktrans %} Le but était qu'à partir d'un code en mini-Pascal, un compilateur Python le transforme en pseudo-code intermédiaire. {% endblocktrans %} </p></br>
+            <p> {% blocktrans %} En m'appuyant sur les cours théoriques reçues, j'ai notamment mis en place : {% endblocktrans %} </br>
+            - {% blocktrans %} la grammaire,  {% endblocktrans %} </br>
+            - {% blocktrans %} l'analyse lexicale,  {% endblocktrans %} </br>
+            - {% blocktrans %} l'analyse syntaxique {% endblocktrans %} </br>
+            - {% blocktrans %} et l'analyse sémantique,{% endblocktrans %} </br>
+            - {% blocktrans %} le traducteur qui génère le code intermédiaire{% endblocktrans %} </br>
+            - {% blocktrans %} et le gestionnaire d'erreurs qui détecte les erreurs lexicales, syntaxiques ou sémantiques.{% endblocktrans %} </br>
+            {% blocktrans %} J'ai ainsi implémenté plusieurs classes et fonctions en Python pour gérer toutes ces étapes du processus de compilation comme des fonctions pour reconnaître les nombres entiers, les chaînes de caractères et l'utilisation de plusieurs structures de données comme les tables de hachage. {% endblocktrans %}
+            </p></br>
+            <p> {% blocktrans %} Je suis arrivée à terminer le compilateur dans le temps impartis, il fonctionnait correctement. {% endblocktrans %} </p>
+          ">
+              <h1 class="carousel-title">{% translate "Compilateur" %}</h1>
+              <img src="{% static 'images/compiler.png' %}" alt="Slide 2">
+          </div>
+          <div data-description="<h1>{% blocktrans %} Participation aux Capture The Flag {% endblocktrans %} </h1> </br>
+            <p> {% blocktrans %} Durant l'été entre ma licence et mon master, j'ai rejoins une équipe, ForPlaizAndLulz, afin de participer à des Capture The Flag, des compétitions en ligne de cybersécurité où les participants s’affrontent pour résoudre des énigmes et des problèmes de sécurité informatique. Un défi est gagné une fois qu'est trouvé le drapeau, un code secret caché. {% endblocktrans %} </p> </br>
+            <p> {% blocktrans %} Les défis d'une compétitions sont répartis entre chaque membre afin d'en gagner le plus possible. Je me suis portée volontaire pour les défis en lien avec la cryptographie, ainsi que certains en web, en reverse engineering ou en forensic. {% endblocktrans %} </p> </br>
+            <p> {% blocktrans %} J'ai participé aux CTF suivant : {% endblocktrans %} </br>
+            - Operation Kernel </br>
+            - Imaginary CTF </br>
+            - UaCTF </br>
+            - {% blocktrans %} et le Google CTF {% endblocktrans %}</br>
+            {% blocktrans %} Pour résoudre les défis j'ai souvent mis en place des scripts Python, notamment pour déchiffrer des codes secrets dans les défis de cryptographie. J'ai également inspecter du code JavaScript, des requêtes émises, analyser des images et des audio via certains site et effectuer du reverse engineering avec le logiciel Ghidra. {% endblocktrans %}
+            </p> </br>
+            <p> {% blocktrans %} Évidemment, j'ai relevé certains défis avec succès, tandis que d'autres m'ont échappé. Lorsque je n'arrivais pas à résoudre un défi dans les temps, je pouvais progresser en consultant les writeups (solutions) partagés par d'autres participants. {% endblocktrans %} </p> </br>
+          ">
+              <h1 class="carousel-title">{% translate "Capture the Flag" %}</h1>
+              <img src="{% static 'images/ctf.png' %}" alt="Slide 3">
+          </div>
+
+          </div>
+        </div>
+
+
+
+        </section>
+
+
+
+
+
+
+
+        <section class="java">
+
+            <div class="text"><h1>{% translate "Projets Java" %} </h1></div>
+             <div class="slick-carousel">
+
+          <div data-description=" <h1>{% blocktrans %} Projet : Logiciel de réservation de séjours {% endblocktrans %} </h1> </br>
+            <p> {% blocktrans %}Durant ma première année de master en informatique, j'ai dû réaliser un projet de logiciel de réservation de séjours en JavaFX, en binôme. Cette application s’adresse à deux types d’utilisateurs : les visiteurs non authentifiés et les utilisateurs connectés (voyageurs et hôtes). Les visiteurs peuvent voir la liste complète des voyages et de faire des recherches, s'ils se connectent, ils auront accès à des fonctionnalités supplémentaires.{% endblocktrans %} </p> </br>
+             <p> {% blocktrans %}Le but était d'obtenir une application capable de :{% endblocktrans %} </br>
+              - {% blocktrans %} afficher une liste des séjours et permettre des recherches efficaces,  {% endblocktrans %} </br>
+              - {% blocktrans %} gérer l'authentification et proposer des fonctions personnalisées selon le type d'utilisateur,  {% endblocktrans %} </br>
+              - {% blocktrans %} permettre aux utilisateurs de gérer leurs réservations et aux hôtes de gérer leurs séjours à confirmer.  {% endblocktrans %} </br>
+              {% blocktrans %} J'ai notamment été chargée de la structure de l'interface, de la gestion des réservations côté voyageur et hôte et de la parallélisation, tandis que mon binôme s'est occupé de la logique, de la conservation des données, de la page des détails d'un voyage avec les commentaires et de la partie recherche.  {% endblocktrans %}
+              </p> </br>
+            <p> {% blocktrans %}Nous avons ainsi réalisé le front-end et le back-end de cette application en mettant en place :{% endblocktrans %} </br>
+            - {% blocktrans %} une recherche qui fonctionne par date et/ou recherche textuelle dès 2 caractères sur les noms des voyages, les villes et les pays. Nous avons parallélisé cette recherche pour plus de fluidité. {% endblocktrans %} </br>
+            - {% blocktrans %} Un système d’authentification qui vérifie les informations utilisateur par rapport à une base de données, avec un message d’erreur en cas de non-correspondance. {% endblocktrans %} </br>
+            - {% blocktrans %} Pour les voyageurs connectés, des options d’ajout au panier, de visualisation des détails des séjours, de commentaires sur les séjours, et une page de gestion du panier et possibilité de valider ses réservations.{% endblocktrans %} </br>
+            - {% blocktrans %} Pour les hôtes, une page de récapitulatif des séjours, permettant de visualiser et de gérer les séjours en attente de confirmation ou refusés, avec des règles de mise à jour automatique des listes selon le statut des séjours. {% endblocktrans %} </br>
+            - {% blocktrans %} Nous avons utilisé GitHub pour assurer le versionning de l'application. {% endblocktrans %}
+            </p> </br>
+             <p> {% blocktrans %} Nous avons atteint les objectifs requis dans les temps. L'expérience utilisateur est fluide et personnalisée. Elle est persistante, permettant de conserver les données lors des redémarrages. Les fonctionnalités d'authentification, de gestion de paniers, et de traitement des réservations fonctionnent de manière robuste et répondent aux attentes d'interaction des différents types d’utilisateurs.{% endblocktrans %} </p> </br>
+          ">
+              <h1 class="carousel-title">{% translate "Logiciel de réservation de séjours" %}</h1>
+              <img src="{% static 'images/javafx.png' %}" alt="Slide 1">
+          </div>
+
+          <div data-description="<h1>{% blocktrans %} Projet : jeu d'échec {% endblocktrans %} </h1> </br>
+          <p> {% blocktrans %} J'ai appris le Java en licence d'informatique à l'université d'Aix Marseille. Une fois maîtrisé, j'ai eu un cours consistant en un projet d'un semestre visant à mettre en place un jeu d'échecs.{% endblocktrans %}  </p> </br>
+          <p> {% blocktrans %} Le front-end était déjà fourni (l'interface, les images des pions), je devais alors mettre en place le back-end : comment déplacer les différents pions, déterminer le gagnant etc{% endblocktrans %}  </p> </br>
+          <p> {% blocktrans %} J'ai alors implémenté différentes classes, fonctions, mis en place des design pattern adaptés, ainsi que des tests pour vérifier le bon fonctionnement du jeu. Etant donné que j'avais du temps en plus, j'ai également mis en place une petite intelligence artificielle à affronter via un ensemble de règles, donc sans réseau de neurones.{% endblocktrans %}  </p> </br>
+          <p> {% blocktrans %} J'ai ainsi terminé le jeu dans le temps impartis, il fonctionnait correctement. {% endblocktrans %}  </p> </br>
+            ">
+              <h1 class="carousel-title">{% translate "Jeu d'échec" %}</h1>
+              <img src="{% static 'images/jeu_echec.png' %}" alt="Slide 2">
+          </div>
+          <div data-description="<h1>{% blocktrans %} Projet : jeu d'arcade {% endblocktrans %} </h1> </br>
+            <p> {% blocktrans %} J'ai appris le Java en licence d'informatique à l'université d'Aix Marseille. Une fois maîtrisé, j'ai eu un cours consistant en un projet d'un semestre visant à mettre en place un jeu d'arcade. Il s'agit d'un jeu où le joueur contrôle un vaisseau spatial qui peut se diriger dans toutes les directions. Le but est d'esquiver ou de détruire les astéroïdes, de rester en vie durant le temps imparti.{% endblocktrans %}  </p> </br>
+          <p> {% blocktrans %} Le front-end était déjà fourni (l'interface, l'image du vaisseau), je devais alors mettre en place le back-end : comment déplacer le vaisseau spatial, déterminer la fin de partie...{% endblocktrans %}  </p> </br>
+          <p> {% blocktrans %} J'ai alors implémenté différentes classes, fonctions, ainsi que des tests pour vérifier le bon fonctionnement du jeu. J'ai mis en place :{% endblocktrans %} </br>
+           - {% blocktrans %}un timer, {% endblocktrans %} </br>
+           - {% blocktrans %}la génération aléatoire d'astéroïdes,{% endblocktrans %} </br>
+           - {% blocktrans %}j'ai pris en compte les lois de la physique pour le comportement du vaisseau spatial lors de ses déplacements...{% endblocktrans %}
+           </p> </br>
+          <p> {% blocktrans %} J'ai ainsi terminé le jeu dans le temps impartis, il fonctionnait correctement. {% endblocktrans %}  </p> </br>
+          ">
+              <h1 class="carousel-title">{% translate "Jeu d'arcade" %}</h1>
+              <img src="{% static 'images/asteroide.png' %}" alt="Slide 3">
+          </div>
+
+          </div>
+
+        </section>
+
+
+
+
+
+
+
+
+        <section class="cpp"></section>
+
+
+
+
+
+        <!-- section 3 contact -->
+        <section id="contact" class="contact-section">
+            <div class="group">
+                <div class="text">
+                    <h1> {% translate "Pour tous renseignements complémentaires : " %}</br> </br>{% translate "contactez-moi !" %} </h1>
+                </div>
+                <form method="post" action="/">
+                    {% csrf_token %}
+                    <ul class="contactList">
+                        {{form}}
+                    </ul>
+
+                    <button class="button-style" type="submit">{% translate "Envoyez !" %}</button>
+                </form>
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+</body>
+</html>

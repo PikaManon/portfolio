@@ -1,0 +1,1044 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-10-09 14:56+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: portfolio/forms.py:9
+msgid "Objet"
+msgstr "Object"
+
+#: templates/home/home.html:30
+msgid "Profil"
+msgstr "Profile"
+
+#: templates/home/home.html:31
+msgid "Projets"
+msgstr "Projects"
+
+#: templates/home/home.html:82
+msgid "Développeuse / Data Scientist"
+msgstr "Developer / Data Scientist"
+
+#: templates/home/home.html:83
+msgid ""
+"Forte d'une première expérience professionnelle en intelligence artificielle,"
+msgstr "With a first professional experience in artificial intelligence,"
+
+#: templates/home/home.html:83
+msgid "curieuse, autonome et flexible,"
+msgstr "curious, autonomous and flexible"
+
+#: templates/home/home.html:84
+msgid ""
+"je suis déterminée à intégrer une équipe et mettre en pratique mes "
+"compétences."
+msgstr "I am determined to join a team and put my skills into practice."
+
+#: templates/home/home.html:85
+msgid ""
+" Depuis le lycée, j'ai acquis une expertise en Python, notamment en "
+"développement de sites web et en solutions data. Durant mes études, j’ai "
+"également travaillé avec Java et SQL pendant 5 ans, en plus de renforcer mes "
+"compétences en intelligence artificielle et analyse de données sur les deux "
+"dernières années. "
+msgstr "Since high school, I've acquired expertise in Python, particularly in website development and data solutions. During my studies, I also worked with Java and SQL for 5 years, in addition to strengthening my skills in artificial intelligence and data analysis over the last two years."
+
+#: templates/home/home.html:105
+msgid "Projets IA / Data"
+msgstr "AI / Data Projects"
+
+#: templates/home/home.html:108
+msgid "Projet : Voiture Autonome"
+msgstr "Project : Autonomous Car"
+
+#: templates/home/home.html:109
+msgid ""
+"Lors de ma première année de master informatique parcours intelligence "
+"artificielle, j'ai choisi comme projet sur l'année de rendre autonome une "
+"voiture modèle réduit afin qu'elle puisse accomplir par elle-même des tours "
+"de circuit : se diriger et adapter sa vitesse. Nous étions une équipe de 3 "
+"personnes. "
+msgstr ""
+"During my first year of master's degree in computer science, I chose as "
+"project for the year to make an autonomous model car so that it can perform "
+"by itself circuit tours: steer and adapt its speed. We were a team of 3 "
+"people. "
+
+#: templates/home/home.html:111
+msgid "Nous devions :"
+msgstr "We had to :"
+
+#: templates/home/home.html:113
+msgid "améliorer la structure de voiture modèle réduit existante,"
+msgstr "improve the existing model car structure,"
+
+#: templates/home/home.html:114
+msgid ""
+"configurer la Raspberry PI 4 avec notamment les différents langages et "
+"librairies,"
+msgstr ""
+"configure the Raspberry PI 4, including the various languages and libraries,"
+
+#: templates/home/home.html:115
+msgid ""
+"accumuler assez de données annotées pour ensuite entraîner des intelligences "
+"artificielles qui permettront à la voiture d'être autonome "
+msgstr ""
+"accumulate enough annotated data to train the artificial intelligences that "
+"will enable the car to be autonomous"
+
+#: templates/home/home.html:116
+msgid "et obtenir les meilleurs résultats possible."
+msgstr "and get the best possible results."
+
+#: templates/home/home.html:118
+msgid "Dans ce projet, j'ai participé à "
+msgstr "In this project, I was involved in"
+
+#: templates/home/home.html:119
+msgid "la configuration de la voiture,"
+msgstr "car's configuration"
+
+#: templates/home/home.html:120
+msgid ""
+"à l'acquisition et à l'annotation automatique des données sur le circuit "
+"(des images des virages), "
+msgstr ""
+"automatic acquisition and annotation of circuit data (images of curves)"
+
+#: templates/home/home.html:121
+msgid ""
+"j'ai fine-tuné deux modèles de vision par ordinateur pour des tâches de "
+"classification : VGG16 et MobileNet, pré-entraîné sur ImageNet. J'ai pour "
+"cela utilisé Python et ses librairies TensorFlow et Keras."
+msgstr ""
+"I fine-tuned two computer vision models for classification tasks : VGG16 and "
+"MobileNet, pre-trained on ImageNet. I used Python and its TensorFlow and "
+"Keras libraries."
+
+#: templates/home/home.html:122
+msgid "Puis j'ai intégrer ces modèles sur la Raspberry PI 4."
+msgstr "Then I integrated these models into the Raspberry PI 4."
+
+#: templates/home/home.html:123
+msgid "Enfin, pour nous organiser, nous avons utilisé un Diagramme de Gantt."
+msgstr "Finally, to organize ourselves, we used a Gantt Chart."
+
+#: templates/home/home.html:125
+msgid "Comme résultats:"
+msgstr "Results:"
+
+#: templates/home/home.html:126
+msgid ""
+"le MobileNet était bien plus rapide que le VGG16 pour l'inférence sur la "
+"Raspberry PI. (25 au lieu de 69 time per inference step)"
+msgstr ""
+"MobileNet was much faster than VGG16 for inference on the Raspberry PI. (25 "
+"instead of 69 time per inference step)"
+
+#: templates/home/home.html:127
+#, python-format
+msgid ""
+"Le MobileNet a obtenu comme meilleurs résultats sur l'ensemble de test : "
+"80,2%% d'accuracy sur la prédiction des directions (virage à droite, ligne "
+"droite ou virage à gauche)."
+msgstr ""
+"The MobileNet obtained the best results on the test set: 80.2%% accuracy on "
+"direction prediction (right turn, straight line or left turn)."
+
+#: templates/home/home.html:128
+msgid ""
+"L'ajout de la prédiction de la vitesse était prévu pour les prochaines "
+"étapes."
+msgstr "The addition of speed prediction was planned for the next stages."
+
+#: templates/home/home.html:129
+msgid "Voiture Autonome"
+msgstr "Autonomous Car"
+
+#: templates/home/home.html:133
+msgid "Projet : Normalisation des scores"
+msgstr "Project: Score normalization"
+
+#: templates/home/home.html:134
+msgid ""
+"Lors de ma 2e année de master j'ai effectuée une alternance au Laboratoire "
+"Informatique d'Avignon. Dans ce laboratoire, ils travaillent sur la "
+"vérification du locuteur : on a deux audio et on doit savoir s'ils "
+"proviennent de la même personne ou non. Une IA va donc donner un score et en "
+"fonction du seuil en vigueur les deux audio seront considéré comme provenant "
+"de la même personne ou non. Le seuil en vigueur est fixé en fonction de "
+"l'apprentissage de l'IA. "
+msgstr ""
+"During my 2nd year of master's degree in computer science, I did an "
+"apprenticeship at the Laboratoire Informatique d'Avignon. In this "
+"laboratory, they are working on speaker verification: we have two audios and "
+"we need to know whether they come from the same person or not. An AI will "
+"give a score, and depending on the threshold in force, the two audios will "
+"be considered as coming from the same person or not. The threshold in force "
+"is set based on AI learning. "
+
+#: templates/home/home.html:135
+msgid ""
+"Un de mes tuteurs m'a donné comme mission d'explorer de nouvelles techniques "
+"de normalisation des scores de ces systèmes de vérification du locuteur. La "
+"normalisation des scores a pour but de mieux séparer les scores des couples "
+"provenant de la même personne de ceux où ce n'est pas le cas pour obtenir de "
+"meilleurs résultats, une meilleure accuracy du système, notamment quand on a "
+"de petits ensemble de données."
+msgstr ""
+"One of my tutors gave me the task of exploring new techniques for "
+"normalizing the scores of these speaker verification systems. The aim of "
+"score normalization is to better separate the scores of pairs originating "
+"from the same person from those where this is not the case, in order to "
+"achieve better results and system accuracy, especially when dealing with "
+"small data sets."
+
+#: templates/home/home.html:136
+msgid "Ainsi, j'ai : "
+msgstr "So, I:"
+
+#: templates/home/home.html:137
+msgid ""
+"lu différents articles scientifiques sur des méthodes de normalisation des "
+"scores (AD-Norm, AS-Norm, S-Norm, LLN),"
+msgstr ""
+"read various scientific articles on score normalization methods (AD-Norm, AS-"
+"Norm, S-Norm, LLN),"
+
+#: templates/home/home.html:138
+msgid ""
+"implémenté en python ces méthodes existantes, essayé de les améliorer et "
+"d'en construire de nouvelles en me basant dessus. "
+msgstr ""
+"implemented these existing methods in Python, tried to improve them and "
+"build new ones based on them."
+
+#: templates/home/home.html:139
+msgid ""
+"J'ai également étudié l'impact du fine-tuning : si la normalisation peut le "
+"remplacer ou le compléter."
+msgstr ""
+"I also studied the impact of the fine-tuning: whether standardization can "
+"replace or complement it"
+
+#: templates/home/home.html:140
+msgid ""
+"Enfin, j'ai transposer ces méthodes au domaine de la détection des fake "
+"audio dans le contexte du challenge ASVSpoof2024. "
+msgstr ""
+"Finally, I have transposed these methods to the field of fake audio "
+"detection in the context of the ASVSpoof2024 challenge."
+
+#: templates/home/home.html:142
+msgid "Résultats :"
+msgstr "Results:"
+
+#: templates/home/home.html:143
+msgid ""
+"Certaines techniques sont plus robuste que d'autres, mais le choix de la "
+"normalisation va quand même dépendre du jeu de données."
+msgstr ""
+"Some techniques are more robust than others, but the choice of normalization "
+"will still depend on the dataset."
+
+#: templates/home/home.html:144
+#, python-format
+msgid ""
+"La normalisation peut compléter le fine-tuning (on peut obtenir des gains "
+"supérieurs à 10%%), mais le fine-tuning seul reste plus avantageux que la "
+"normalisation seule."
+msgstr ""
+"Standardization can complement fine-tuning (gains of more than 10%% can be "
+"obtained), but fine-tuning alone is still more advantageous than "
+"standardization alone."
+
+#: templates/home/home.html:148
+msgid "Normalisation des scores"
+msgstr "Score normalization"
+
+#: templates/home/home.html:151
+msgid "Projet : Transposition de l'EfficientNet à la vérification du locuteur "
+msgstr "Project: Transposing EfficientNet to speaker verification"
+
+#: templates/home/home.html:152
+msgid ""
+"Lors de ma 2e année de master j'ai effectuée une alternance au Laboratoire "
+"Informatique d'Avignon. Dans ce laboratoire, ils travaillent sur la "
+"vérification du locuteur : on a deux audio et on doit savoir s'ils "
+"proviennent de la même personne ou non. Le modèle état de l'art dans ce "
+"domaine est le ResNet, un réseau de neurones qui vient initialement du "
+"domaine de l'image.  "
+msgstr ""
+"During my 2nd year of master's degree in computer science, I did an "
+"apprenticeship at the Laboratoire Informatique d'Avignon. In this "
+"laboratory, they are working on speaker verification: we have two audios and "
+"we need to know whether they come from the same person or not.The state-of-"
+"the-art model in this area is ResNet, a neural network that initially comes "
+"from the image domain. "
+
+#: templates/home/home.html:153
+msgid ""
+" Un de mes tuteurs m'a donné comme mission de transposer à la vérification "
+"du locuteur un autre modèle d'IA dans le domaine de l'image plus récent et "
+"performant que le ResNet, afin d'espérer de meilleurs résultats sur nos "
+"ensemble de données."
+msgstr ""
+" One of my tutors gave me the task of transposing to speaker verification "
+"another AI model in the image domain, more recent and powerful than ResNet, "
+"in order to hope for better results on our datasets."
+
+#: templates/home/home.html:154
+msgid "Ainsi,"
+msgstr "So,"
+
+#: templates/home/home.html:155
+msgid ""
+"j'ai lu différents articles scientifiques pour choisir le modèle d'IA. Ma "
+"veille technologique s'est conclut sur l'EfficientNet en raison de ses "
+"performances et de sa rapidité/légèreté."
+msgstr ""
+"I read different scientific articles to choose the model of AI. My "
+"technology watch ended on EfficientNet because of its performance and speed/"
+"lightness."
+
+#: templates/home/home.html:156
+msgid ""
+"En PyTorch, j'ai adapté son architecture au domaine de la vérification du "
+"locuteur : en m'inspirant du ResNet, j'ai ajusté les tailles d'entrées et de "
+"sortie, modifier et supprimer certaines couches de neurones, tester d'autres "
+"méthodes de pooling… "
+msgstr ""
+"In PyTorch, I adapted its architecture to the field of speaker verification: "
+"inspired by ResNet, I adjusted input and output sizes, modify and delete "
+"some layers of neurons, test other pooling methods... "
+
+#: templates/home/home.html:158
+msgid ""
+"Résultat : Malgré tous mes efforts, l'EfficientNet n'est pas arrivé à "
+"surpasser les résultats du ResNet. Son architecture ne s'adapte pas aussi "
+"bien à la vérification du locuteur. "
+msgstr ""
+"Result: Despite my best efforts, the EfficientNet was unable to surpass the "
+"results of the ResNet. Its architecture doesn't adapt as well to speaker "
+"verification. "
+
+#: templates/home/home.html:160
+msgid "EfficientNet"
+msgstr "EfficientNet"
+
+#: templates/home/home.html:164
+msgid "Projet : Analyse de sentiments sur AlloCiné "
+msgstr "Project: Sentiment analysis on AlloCiné"
+
+#: templates/home/home.html:165
+msgid ""
+"Durant ma première année de master, j'ai effectué plusieurs projets en "
+"analyse de sentiments dont un sur les commentaires AlloCine. Une "
+"intelligence artificielle va déterminer si un commentaire est positif, "
+"négatif ou neutre."
+msgstr ""
+"During my first year of Master's degree in computer science, I carried out "
+"several projects in sentiment analysis, including one on AlloCine comments. "
+"An artificial intelligence will determine whether a comment is positive, "
+"negative or neutral."
+
+#: templates/home/home.html:166
+msgid " Les corpus de données étaient fournis (dev, train, test). "
+msgstr "Datasets were provided (dev, train, test)."
+
+#: templates/home/home.html:167
+msgid "Je devais ainsi :"
+msgstr "I had to:"
+
+#: templates/home/home.html:168
+msgid " nettoyer et analyser les bases de données utilisés,  "
+msgstr "clean and analyze the databases used,"
+
+#: templates/home/home.html:169
+msgid ""
+"  mettre en place plusieurs modèles, qu'ils soient à base de connaissance "
+"(lexique de sentiment qui va permettre de calculer le score d'un document en "
+"fonction des mots qu'il contient) ou à base d'apprentissage (algorithmes "
+"d'apprentissage automatique, nécessite un corpus annoté pour réaliser un "
+"apprentissage supervisé),  "
+msgstr ""
+"implement several models, whether knowledge-based (sentiment lexicon, which "
+"calculates the score of a document based on the words it contains) or "
+"learning-based (machine learning algorithms, requiring an annotated corpus "
+"for supervised learning), "
+
+#: templates/home/home.html:170
+msgid " et atteindre les meilleurs résultats possibles. "
+msgstr "and get the best possible results."
+
+#: templates/home/home.html:172
+msgid ""
+" J'ai ainsi préparées les données en supprimant tout ce qui est jugé comme "
+"non pertinent pour cette tâche : "
+msgstr ""
+"So I prepared the data by deleting anything deemed irrelevant for this task:"
+
+#: templates/home/home.html:173
+msgid " j'ai enlevé les lignes qui contiennent trop d'informations manquantes,"
+msgstr "I've removed the lines that contain too much missing information,"
+
+#: templates/home/home.html:174
+msgid " j'ai enlevé les lignes dont le commentaire n'était pas en français,"
+msgstr "I've removed the lines where the commentary was not in French,"
+
+#: templates/home/home.html:175
+msgid " j'ai supprimé les accents, la casse, la ponctuation..."
+msgstr "I've removed accents, case, punctuation..."
+
+#: templates/home/home.html:176
+msgid ""
+" j'ai procédé si besoin à des étapes de tokenisation, stemming, "
+"lemmatisation..."
+msgstr ""
+"if necessary, I have carried out tokenization, stemming and lemmatization "
+"steps..."
+
+#: templates/home/home.html:177
+msgid ""
+" J'ai analysé les données via le logiciel ElasticSearch afin d'observer la "
+"distribution des données, s'assurer que les classes étaient bien "
+"équilibrées. J'ai également mis en place un script Python calculant les "
+"corrélations de Pearson et Spearman avec les librairies matplotlib, scipy et "
+"seaborn."
+msgstr ""
+"I analyzed the data using ElasticSearch software to observe the distribution "
+"of the data and ensure that the classes were well balanced. I also set up a "
+"Python script calculating Pearson and Spearman correlations using the "
+"matplotlib, scipy and seaborn libraries."
+
+#: templates/home/home.html:178
+msgid " J'ai utilisé : "
+msgstr "I used:"
+
+#: templates/home/home.html:179
+msgid ""
+" un SVM (Support Vector Machine) avec des données sous forme de sacs de mots "
+"pondérés par les scores TF-IDF (Term Frequency-Inverse Document Frequency), "
+msgstr ""
+"an SVM (Support Vector Machine) with data in the form of bags of words "
+"weighted by TF-IDF (Term Frequency-Inverse Document Frequency) scores, "
+
+#: templates/home/home.html:180
+msgid ""
+" un CNN (Convolutional Neural Network) dont les données sont sous forme de "
+"plongements lexicaux (word embeddings, word2vec, skip-gram)"
+msgstr ""
+"a CNN (Convolutional Neural Network) with data in the form of word "
+"embeddings (word2vec, skip-gram)"
+
+#: templates/home/home.html:181
+msgid ""
+" et un CamemBERT (camembert-base sur HuggingFace) fine-tuné sur les données "
+"d'AlloCiné"
+msgstr ""
+"and a CamemBERT (camembert-base on HuggingFace) fine-tuned on AlloCiné data"
+
+#: templates/home/home.html:183
+#, python-format
+msgid ""
+"Le modèle le plus performant est CamemBERT puis vient le SVM et enfin le "
+"CNN, ils ont une meilleure accuracy respective sur l'ensemble de test de "
+"84%%, 79%% et 74%%. Ces résultats étaient en adéquation avec l'état de "
+"l'art. Le SVM est particulièrement performant pour une méthode ne comprenant "
+"pas de réseau de neurones et le CNN peut peut-être être amélioré en testant "
+"d'autres configurations. "
+msgstr ""
+"The best-performing model was CamemBERT, followed by SVM and finally CNN, "
+"with respective best accuracy on the test set of 84%%, 79%% and 74%%. These "
+"results were in line with the state of the art. The SVM performs "
+"particularly well for a method that doesn't include a neural network, and "
+"the CNN can perhaps be improved by testing other configurations."
+
+#: templates/home/home.html:185
+msgid "Analyse de sentiments"
+msgstr "Sentiment analysis"
+
+#: templates/home/home.html:188
+msgid " Participation aux 24h pour coder"
+msgstr "Participation in the 24h to code"
+
+#: templates/home/home.html:189
+msgid ""
+"Sur mon temps libre, durant la 2e année de mon master en informatique, j'ai "
+"participé au 24h pour coder 2e édition organisé par le BDE de mon "
+"établissement. Le sujet libre de ces 24h pour coder était de réaliser une "
+"application contenant une intelligence artificielle."
+msgstr "In my spare time, during the 2nd year of my master's degree in computer science, I participated in the 24h to code 2nd edition organized by the BDE of my university. The free subject of these 24h to code was to develop an application containing artificial intelligence."
+
+#: templates/home/home.html:190
+msgid ""
+"Avec mon équipe, 'Les Lovelaces' nous avons choisi de réaliser 'Learn Mate' "
+"une interface web (ReactJS pour le front, NodeJS pour le back et API en "
+"Python) permettant de générer des annales et des questions de cours à partir "
+"de documents PDF. Un minuteur pour simuler les conditions d'examen et une "
+"correction est intégrée. Le but était d'obtenir plus d'annales pour les "
+"étudiants de toutes disciplines et permettre un entraînement personnalisé. "
+msgstr "With my team, 'Les Lovelaces', we chose to create 'Learn Mate', a web interface (ReactJS for the front end, NodeJS for the back end and an API in Python) that generates annals and course questions from PDF documents. A timer to simulate exam conditions and a correction is integrated. The aim was to provide more annals for students of all disciplines and enable personalized training."
+
+#: templates/home/home.html:191
+msgid ""
+"J'ai été en charge de la partie IA.\n"
+"J'ai choisi et mis en place deux modèles d'intelligence artificielle depuis "
+"Hugging Face : une première (pdf-to-text) qui transforme le PDF en texte et "
+"une deuxième (t5-base-question-generator) qui génère les questions/réponses."
+msgstr "I chose and implemented two artificial intelligence models from Hugging Face: one (pdf-to-text) that transforms the PDF into text, and a second (t5-base-question-generator) that generates the questions/answers."
+
+#: templates/home/home.html:193
+msgid ""
+" En mettant en pratique mes connaissances en Python et en IA, j'ai obtenu la "
+"2e place avec mon équipe. Evidemment, dû au peu de temps imparti, nous "
+"avions beaucoup de pistes d'amélioration : améliorer les performances de "
+"l'intelligence artificielle (fine-tune, en utiliser d'autres…), intégrer un "
+"planning de révision et de la reconnaissance vocale pour pouvoir s'entraîner "
+"à l'oral."
+msgstr "By putting my knowledge of Python and AI into practice, my team and I came 2nd. Obviously, given the short time available, we had a lot of room for improvement: improving the AI's performance (fine-tune, use others AI...), integrating a revision schedule and voice recognition for oral practice."
+
+#: templates/home/home.html:195
+msgid "24h pour coder"
+msgstr "24h to code"
+
+#: templates/home/home.html:266
+msgid "Projets Python"
+msgstr "Python Projects"
+
+#: templates/home/home.html:269
+msgid " Projet : Toolkit en vérification du locuteur "
+msgstr "Project: Toolkit for speaker verification"
+
+#: templates/home/home.html:270
+msgid ""
+"Lors de ma 2e année de master informatique j'ai effectuée une alternance au "
+"Laboratoire Informatique d'Avignon. Dans ce laboratoire, ils travaillent sur "
+"la vérification du locuteur : on a deux audio et on doit savoir s'ils "
+"proviennent de la même personne ou non."
+msgstr ""
+"During my 2nd year of master's degree in computer science, I did an "
+"apprenticeship at the Laboratoire Informatique d'Avignon. In this "
+"laboratory, they are working on speaker verification: we have two audios and "
+"we need to know whether they come from the same person or not."
+
+#: templates/home/home.html:271
+msgid ""
+"Un de mes tuteurs m'a donné comme mission de participer à la mise en place "
+"d'un toolkit en Python permettant un cadre unifié dans lequel chaque "
+"utilisateur peut créer et évaluer, initialiser de la même façon son système "
+"de vérification du locuteur en utilisant les méthodes les plus récentes de "
+"l'état de l'art. Le toolkit se devait ainsi d'être le plus facile "
+"d'utilisation possible, donc avoir un code propre et des performances "
+"rapides. Je travaillais sur la partie mise en place de grands ensemble de "
+"données et leur analyse tandis qu'un de mes collègues, lui aussi alternant, "
+"se chargeait de la partie mise en place du système de vérification du "
+"locuteur."
+msgstr ""
+"One of my tutors gave me the task of participating in the development of a "
+"toolkit in Python that would provide a unified framework in which each user "
+"could create, evaluate and initialize they own speaker verification system "
+"in the same way, using the latest state-of-the-art methods. The toolkit had "
+"to be as easy to use as possible, with clean code and fast performance. I "
+"was in charge of setting up and analyzing the large datasets, while one of "
+"my colleagues, also an apprentice, was in charge of setting up the speaker "
+"verification system."
+
+#: templates/home/home.html:272
+msgid ""
+"Ainsi, j'ai implémenté plusieurs fonctions en Python, tout en respectant les "
+"bonnes pratiques de développement : mise en place de design pattern, "
+"optimisation du code… "
+msgstr ""
+"So I implemented several functions in Python, while respecting good "
+"development practices: implementation of design patterns, code "
+"optimization..."
+
+#: templates/home/home.html:273
+msgid " Des algorithmes : "
+msgstr "Algorithms:"
+
+#: templates/home/home.html:274
+msgid " qui téléchargeaient et traitaient automatiquement des données audio, "
+msgstr " which automatically downloaded and pricessed audio data,"
+
+#: templates/home/home.html:275
+msgid " qui vérifient le bon téléchargement via les fonctions de hachage,"
+msgstr "which verify correct downloading via hash functions,"
+
+#: templates/home/home.html:276
+msgid " d'autres qui calculaient des statistiques sur ces données"
+msgstr "others which calculated statistics on this data"
+
+#: templates/home/home.html:277
+msgid ""
+" et d'autres encore qui permettaient de visualiser ces données grâce à la "
+"bibliothèque MatPlotLib."
+msgstr ""
+"and others which allowed to visualize these data through the MatPlotLib "
+"library."
+
+#: templates/home/home.html:278
+msgid ""
+" J'ai également mis en place une documentation de ce toolkit et le code "
+"était mis sur Git."
+msgstr "I also put documentation of this toolkit and the code was put on Git."
+
+#: templates/home/home.html:280
+msgid ""
+"Résultat : J'ai pu mener à bien ce projet de toolkit, il a été fini dans les "
+"temps : j'avais le semestre pour le terminer."
+msgstr ""
+"Result: I was able to complete this toolkit project, it was finished on "
+"time: I had the semester to finish it."
+
+#: templates/home/home.html:282
+msgid "Toolkit en vérification du locuteur"
+msgstr "Toolkit for speaker verification"
+
+#: templates/home/home.html:286
+msgid " Projet : Compilateur Mini-Pascal "
+msgstr "Project: Mini-Pascal compiler"
+
+#: templates/home/home.html:287
+msgid ""
+" Durant ma 3e année de licence informatique, j'ai eu un cours consistant en "
+"un projet d'un semestre visant à mettre en place un compilateur mini-Pascal "
+"en Python. "
+msgstr ""
+"During my 3rd year of bachelor's degree in computer science, I had a course "
+"consisting of a semester-long project to implement a mini-Pascal compiler in "
+"Python."
+
+#: templates/home/home.html:288
+msgid ""
+" Le but était qu'à partir d'un code en mini-Pascal, un compilateur Python le "
+"transforme en pseudo-code intermédiaire. "
+msgstr ""
+"The goal was that from a mini-Pascal code, a Python compiler turns it into "
+"intermediate pseudo-code."
+
+#: templates/home/home.html:289
+msgid ""
+" En m'appuyant sur les cours théoriques reçues, j'ai notamment mis en "
+"place : "
+msgstr "Based on the theoretical courses I received, I have set up:"
+
+#: templates/home/home.html:290
+msgid " la grammaire,  "
+msgstr "grammar,"
+
+#: templates/home/home.html:291
+msgid " l'analyse lexicale,  "
+msgstr "lexical analysis, "
+
+#: templates/home/home.html:292
+msgid " l'analyse syntaxique "
+msgstr "syntactic analysis"
+
+#: templates/home/home.html:293
+msgid " et l'analyse sémantique,"
+msgstr "and semantic analysis, "
+
+#: templates/home/home.html:294
+msgid " le traducteur qui génère le code intermédiaire"
+msgstr "the translator that generates the intermediate code "
+
+#: templates/home/home.html:295
+msgid ""
+" et le gestionnaire d'erreurs qui détecte les erreurs lexicales, syntaxiques "
+"ou sémantiques."
+msgstr ""
+"and the error handler that detects lexical, syntactic or semantic errors."
+
+#: templates/home/home.html:296
+msgid ""
+" J'ai ainsi implémenté plusieurs classes et fonctions en Python pour gérer "
+"toutes ces étapes du processus de compilation comme des fonctions pour "
+"reconnaître les nombres entiers, les chaînes de caractères et l'utilisation "
+"de plusieurs structures de données comme les tables de hachage. "
+msgstr ""
+"So I implemented several classes and functions in Python to handle all these "
+"steps of the compilation process, such as functions to recognize integers, "
+"strings and the use of several data structures like hash tables."
+
+#: templates/home/home.html:298
+msgid ""
+" Je suis arrivée à terminer le compilateur dans le temps impartis, il "
+"fonctionnait correctement. "
+msgstr ""
+"I managed to finish the compiler in the allotted time, and it worked "
+"properly."
+
+#: templates/home/home.html:300
+msgid "Compilateur"
+msgstr "Compiler"
+
+#: templates/home/home.html:303
+#, fuzzy
+#| msgid " Projet : Capture The Flag "
+msgid " Participation aux Capture The Flag "
+msgstr "Participation in Capture The Flag"
+
+#: templates/home/home.html:304
+msgid ""
+" Durant l'été entre ma licence et mon master, j'ai rejoins une équipe, "
+"ForPlaizAndLulz, afin de participer à des Capture The Flag, des compétitions "
+"en ligne de cybersécurité où les participants s’affrontent pour résoudre des "
+"énigmes et des problèmes de sécurité informatique. Un défi est gagné une "
+"fois qu'est trouvé le drapeau, un code secret caché. "
+msgstr ""
+" During the summer between my bachelor's and master's degrees, I joined a "
+"team, ForPlaizAndLulz, to take part in Capture The Flag, online "
+"cybersecurity competitions where participants compete to solve computer "
+"security puzzles and problems. A challenge is won once the flag, a hidden "
+"secret code, is found."
+
+#: templates/home/home.html:305
+msgid ""
+" Les défis d'une compétitions sont répartis entre chaque membre afin d'en "
+"gagner le plus possible. Je me suis portée volontaire pour les défis en lien "
+"avec la cryptographie, ainsi que certains en web, en reverse engineering ou "
+"en forensic. "
+msgstr ""
+"The challenges of a competition are divided among each member in order to "
+"win as much as possible. I volunteered for challenges related to "
+"cryptography, as well as some in web, reverse engineering or forensic."
+
+#: templates/home/home.html:306
+msgid " J'ai participé aux CTF suivant : "
+msgstr "I have participated in the following CTFs: "
+
+#: templates/home/home.html:310
+msgid " et le Google CTF "
+msgstr "and the Google CTF"
+
+#: templates/home/home.html:311
+msgid ""
+" Pour résoudre les défis j'ai souvent mis en place des scripts Python, "
+"notamment pour déchiffrer des codes secrets dans les défis de cryptographie. "
+"J'ai également inspecter du code JavaScript, des requêtes émises, analyser "
+"des images et des audio via certains site et effectuer du reverse "
+"engineering avec le logiciel Ghidra. "
+msgstr ""
+"To solve the challenges I often implemented Python scripts, especially to "
+"decrypt secret codes in cryptography challenges. I also inspect JavaScript "
+"code, query output, analyze images and audio through certain sites and "
+"reverse engineer with Ghidra software."
+
+#: templates/home/home.html:313
+msgid ""
+" Évidemment, j'ai relevé certains défis avec succès, tandis que d'autres "
+"m'ont échappé. Lorsque je n'arrivais pas à résoudre un défi dans les temps, "
+"je pouvais progresser en consultant les writeups (solutions) partagés par "
+"d'autres participants. "
+msgstr ""
+"Of course, some challenges were successful, while others eluded me. When I "
+"couldn't solve a challenge in time, I could make progress by consulting the "
+"writeups (solutions) shared by other participants."
+
+#: templates/home/home.html:315
+msgid "Capture the Flag"
+msgstr ""
+
+#: templates/home/home.html:334
+msgid "Projets Java"
+msgstr "Java Projects"
+
+#: templates/home/home.html:337
+msgid " Projet : Logiciel de réservation de séjours "
+msgstr "Project: Hotel reservation software"
+
+#: templates/home/home.html:338
+msgid ""
+"Durant ma première année de master en informatique, j'ai dû réaliser un "
+"projet de logiciel de réservation de séjours en JavaFX, en binôme. Cette "
+"application s’adresse à deux types d’utilisateurs : les visiteurs non "
+"authentifiés et les utilisateurs connectés (voyageurs et hôtes). Les "
+"visiteurs peuvent voir la liste complète des voyages et de faire des "
+"recherches, s'ils se connectent, ils auront accès à des fonctionnalités "
+"supplémentaires."
+msgstr ""
+"During my first year of master's degree in computer science, I had to work "
+"on a project to develop a JavaFX-based software application for booking "
+"stays. This application is aimed at two types of users: unauthenticated "
+"visitors and connected users (travelers and hosts). Visitors can view the "
+"complete list of trips and make searches, and if they log in, they'll have "
+"access to additional functionalities."
+
+#: templates/home/home.html:339
+msgid "Le but était d'obtenir une application capable de :"
+msgstr "The aim was to obtain an application capable of :"
+
+#: templates/home/home.html:340
+msgid ""
+" afficher une liste des séjours et permettre des recherches efficaces,  "
+msgstr " display a list of stays and enable efficient searches,"
+
+#: templates/home/home.html:341
+msgid ""
+" gérer l'authentification et proposer des fonctions personnalisées selon le "
+"type d'utilisateur,  "
+msgstr ""
+"manage authentication and offer personalized functions according to user "
+"type,"
+
+#: templates/home/home.html:342
+msgid ""
+" permettre aux utilisateurs de gérer leurs réservations et aux hôtes de "
+"gérer leurs séjours à confirmer.  "
+msgstr ""
+"enable users to manage their reservations and guests to manage their "
+"confirmed stays."
+
+#: templates/home/home.html:343
+msgid ""
+" J'ai notamment été chargée de la structure de l'interface, de la gestion "
+"des réservations côté voyageur et hôte et de la parallélisation, tandis que "
+"mon binôme s'est occupé de la logique, de la conservation des données, de la "
+"page des détails d'un voyage avec les commentaires et de la partie "
+"recherche.  "
+msgstr ""
+"In particular, I was responsible for the interface structure, traveler and "
+"host booking management and parallelization, while my partner took care of "
+"logic, data storage, the trip details page with comments and the search "
+"section."
+
+#: templates/home/home.html:345
+msgid ""
+"Nous avons ainsi réalisé le front-end et le back-end de cette application en "
+"mettant en place :"
+msgstr ""
+"We created the front-end and back-end of this application by implementing :"
+
+#: templates/home/home.html:346
+msgid ""
+" une recherche qui fonctionne par date et/ou recherche textuelle dès 2 "
+"caractères sur les noms des voyages, les villes et les pays. Nous avons "
+"parallélisé cette recherche pour plus de fluidité. "
+msgstr ""
+"a date-based search and/or a 2-character text search on trip names, cities "
+"and countries. We've parallelized this search for greater fluidity."
+
+#: templates/home/home.html:347
+msgid ""
+" Un système d’authentification qui vérifie les informations utilisateur par "
+"rapport à une base de données, avec un message d’erreur en cas de non-"
+"correspondance. "
+msgstr ""
+"An authentication system that checks user information against a database, "
+"with an error message in case of non-match."
+
+#: templates/home/home.html:348
+msgid ""
+" Pour les voyageurs connectés, des options d’ajout au panier, de "
+"visualisation des détails des séjours, de commentaires sur les séjours, et "
+"une page de gestion du panier et possibilité de valider ses réservations."
+msgstr ""
+"For connected travellers, options to add to cart, view details of stays, "
+"comments on stays, and a basket management page and possibility to validate "
+"its reservations."
+
+#: templates/home/home.html:349
+msgid ""
+" Pour les hôtes, une page de récapitulatif des séjours, permettant de "
+"visualiser et de gérer les séjours en attente de confirmation ou refusés, "
+"avec des règles de mise à jour automatique des listes selon le statut des "
+"séjours. "
+msgstr ""
+"For hosts, a summary page of stays, allowing to view and manage stays "
+"pending confirmation or refused, with rules for automatic updating of lists "
+"according to the status of stays."
+
+#: templates/home/home.html:350
+msgid ""
+" Nous avons utilisé GitHub pour assurer le versionning de l'application. "
+msgstr "We used GitHub to ensure versioning of the application."
+
+#: templates/home/home.html:352
+msgid ""
+" Nous avons atteint les objectifs requis dans les temps. L'expérience "
+"utilisateur est fluide et personnalisée. Elle est persistante, permettant de "
+"conserver les données lors des redémarrages. Les fonctionnalités "
+"d'authentification, de gestion de paniers, et de traitement des réservations "
+"fonctionnent de manière robuste et répondent aux attentes d'interaction des "
+"différents types d’utilisateurs."
+msgstr ""
+"We have met the required objectives in time. The user experience is fluid "
+"and personalized. It is persistent, allowing to keep the data during "
+"restarts. The authentication, basket management and booking processing "
+"functions function robustly and meet the interaction expectations of "
+"different types of users."
+
+#: templates/home/home.html:354
+msgid "Logiciel de réservation de séjours"
+msgstr "Hotel reservation software"
+
+#: templates/home/home.html:358
+msgid " Projet : jeu d'échec "
+msgstr "Project: chess game"
+
+#: templates/home/home.html:359
+msgid ""
+" J'ai appris le Java en licence d'informatique à l'université d'Aix "
+"Marseille. Une fois maîtrisé, j'ai eu un cours consistant en un projet d'un "
+"semestre visant à mettre en place un jeu d'échecs."
+msgstr ""
+"I learned Java during my Bachelor's degree in computer science at the "
+"University of Aix Marseille. Once acquired, I had a course consisting of a "
+"semester-long project to set up a chess game. "
+
+#: templates/home/home.html:360
+msgid ""
+" Le front-end était déjà fourni (l'interface, les images des pions), je "
+"devais alors mettre en place le back-end : comment déplacer les différents "
+"pions, déterminer le gagnant etc"
+msgstr ""
+"The front-end was already provided (the interface, the images of the pawns), "
+"I then had to set up the back-end: how to move the various pawns, determine "
+"the winner, etc."
+
+#: templates/home/home.html:361
+msgid ""
+" J'ai alors implémenté différentes classes, fonctions, mis en place des "
+"design pattern adaptés, ainsi que des tests pour vérifier le bon "
+"fonctionnement du jeu. Etant donné que j'avais du temps en plus, j'ai "
+"également mis en place une petite intelligence artificielle à affronter via "
+"un ensemble de règles, donc sans réseau de neurones."
+msgstr ""
+"I then implemented various classes and functions, and set up the appropriate "
+"design patterns, as well as tests to check that the game was working "
+"properly. Since I had some extra time on my hands, I also set up a small "
+"artificial intelligence to play against. It works via a set of rules, so "
+"there's no neural network involved."
+
+#: templates/home/home.html:362 templates/home/home.html:375
+msgid ""
+" J'ai ainsi terminé le jeu dans le temps impartis, il fonctionnait "
+"correctement. "
+msgstr ""
+"So I finished implementing the game in the time given, it worked properly."
+
+#: templates/home/home.html:364
+msgid "Jeu d'échec"
+msgstr "Chess game"
+
+#: templates/home/home.html:367
+msgid " Projet : jeu d'arcade "
+msgstr "Project: arcade game"
+
+#: templates/home/home.html:368
+msgid ""
+" J'ai appris le Java en licence d'informatique à l'université d'Aix "
+"Marseille. Une fois maîtrisé, j'ai eu un cours consistant en un projet d'un "
+"semestre visant à mettre en place un jeu d'arcade. Il s'agit d'un jeu où le "
+"joueur contrôle un vaisseau spatial qui peut se diriger dans toutes les "
+"directions. Le but est d'esquiver ou de détruire les astéroïdes, de rester "
+"en vie durant le temps imparti."
+msgstr ""
+"I learned Java during my Bachelor's degree in computer science at the "
+"University of Aix Marseille. Once acquired, I had a course consisting of a "
+"semester-long project to set up an arcade game. This is a game in which the "
+"player controls a spaceship that can move in any direction. The aim is to "
+"avoid or destroy asteroids and stay alive for the allotted time."
+
+#: templates/home/home.html:369
+msgid ""
+" Le front-end était déjà fourni (l'interface, l'image du vaisseau), je "
+"devais alors mettre en place le back-end : comment déplacer le vaisseau "
+"spatial, déterminer la fin de partie..."
+msgstr ""
+"The front-end was already provided (the interface, the image of the "
+"spaceship), so I had to set up the back-end: how to move the spaceship, "
+"determine the endgame..."
+
+#: templates/home/home.html:370
+msgid ""
+" J'ai alors implémenté différentes classes, fonctions, ainsi que des tests "
+"pour vérifier le bon fonctionnement du jeu. J'ai mis en place :"
+msgstr ""
+"I then implemented various classes, functions and tests to check that the "
+"game was working properly. I implemented :"
+
+#: templates/home/home.html:371
+msgid "un timer, "
+msgstr "a timer,"
+
+#: templates/home/home.html:372
+msgid "la génération aléatoire d'astéroïdes,"
+msgstr "random asteroid generation,"
+
+#: templates/home/home.html:373
+msgid ""
+"j'ai pris en compte les lois de la physique pour le comportement du vaisseau "
+"spatial lors de ses déplacements..."
+msgstr ""
+"I've taken into account the laws of physics for the behavior of the "
+"spaceship as it moves, etc."
+
+#: templates/home/home.html:377
+msgid "Jeu d'arcade"
+msgstr "Arcade game"
+
+#: templates/home/home.html:402
+msgid "Pour tous renseignements complémentaires : "
+msgstr "For any further information : "
+
+#: templates/home/home.html:402
+msgid "contactez-moi !"
+msgstr "contact me !"
+
+#: templates/home/home.html:410
+msgid "Envoyez !"
+msgstr "Send !"
+
+#, fuzzy
+#~| msgid "Projet : Normalisation des scores"
+#~ msgid "Projet : Transposition de l"
+#~ msgstr "Project: Score normalization"
+
+#~ msgid "à l\\"
+#~ msgstr ""
+#~ "automatic acquisition and annotation of circuit data (images of curves)"
+
+#~ msgid "j\\"
+#~ msgstr ""
+#~ "I fine-tuned two computer vision models for classification tasks : VGG16 "
+#~ "and MobileNet, pre-trained on ImageNet. I used Python and its TensorFlow "
+#~ "and Keras libraries."
+
+#~ msgid "Puis j\\"
+#~ msgstr "Then I integrated these models into the Raspberry PI 4."
+
+#~ msgid "le MobileNet était bien plus rapide que le VGG16 pour l\\"
+#~ msgstr ""
+#~ "MobileNet was much faster than VGG16 for inference on the Raspberry PI. "
+#~ "(25 instead of 69 time per inference step)"
+
+#~ msgid "L\\"
+#~ msgstr "The addition of speed prediction was planned for the next stages."
+
+#, fuzzy
+#~| msgid ""
+#~| "Forte d'une première expérience professionnelle en intelligence "
+#~| "artificielle,"
+#~ msgid ""
+#~ "Lors de ma première année de master informatique parcours intelligence "
+#~ "artificielle, j\\"
+#~ msgstr "With a first professional experience in artificial intelligence,"
