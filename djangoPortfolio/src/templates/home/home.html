@@ -6,6 +6,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="{% static 'images/logo4.png' %}" type="image/x-icon">
 
     <link href="{% static 'css/styles.css' %}" rel="stylesheet">
 
@@ -19,13 +20,15 @@
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
 
-    <title>Homepage</title>
+    <title>Portfolio de Manon Samson</title>
 </head>
 <body>
     <div class="navbar">
         <div class="navbar-inner">
             <nav>
-                <div class="left"><h1>Manon SAMSON</h1></div>
+
+                <div class="left">
+                    <h1>Manon SAMSON</h1></div>
                 <div class="right">
                     <a href="#about"><span> {% translate "Profil" %}</span></a>
                     <a href="#projects"><span> {% translate "Projets" %}</span></a>
@@ -88,7 +91,7 @@
             <a href="https://www.linkedin.com/in/manon-samson-436a35254/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i><span> Linkedin</span></a>
                 </div>
             </div>
-            <div class="headshot">
+            <div class="headshot" style="background-image: url('{% static 'images/logo4.png' %}');">
 
                 <img src="{% static 'images/headshot.webp' %}" alt="Manon Samson headshot">
             </div>
@@ -413,6 +416,9 @@ J'ai choisi et mis en place deux modèles d'intelligence artificielle depuis Hug
 
 
         </section>
+
+
+        <div class="djangologo"><img src="{% static 'images/djangologo.png' %}" alt="django_logo"></div>
 
 
     </main>

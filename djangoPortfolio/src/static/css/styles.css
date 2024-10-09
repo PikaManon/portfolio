@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -32,6 +33,11 @@ h1 {
     color:  #5f7bcd;
 }
 
+.logo{
+    width: 60px;
+
+}
+
 .navbar{
     width: 100%;
     background-color: #f6f3f3;
@@ -57,6 +63,7 @@ nav {
     height: 80px;
 
 }
+
 
 nav .right a {
     color: black;
@@ -325,11 +332,21 @@ nav .right i {
     display: flex;
     justify-content: right;
 
+
+    background-size: 94%;
+    background-position: center;
+    background-repeat: no-repeat; /* Ne pas répéter l'image */
+
 }
 
 .about-me .headshot img {
     width: 350px;
     border-radius: 50%;
+    transition: opacity 0.3s ease;
+}
+
+.about-me .headshot:hover img{
+    opacity: 0;
 }
 
 #about {
@@ -580,6 +597,17 @@ nav .right i {
 }
 
 
+.djangologo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.djangologo img{
+    width: 30px;
+}
+
 
 
 /* ----------------web responsible-------------------- */
@@ -638,10 +666,13 @@ nav .right i {
 
     .about-me {
         padding-left: 20px;
+        padding-bottom: 50px;
     }
 
     .about-me .headshot {
         padding-left: 20px;
+         background-size: 85%;
+
     }
 
 
@@ -668,6 +699,8 @@ nav .right i {
 
     .popup-content {
 padding: 15px; /* Ajuster le padding pour les écrans plus petits */    }
+
+
 
 
 }
