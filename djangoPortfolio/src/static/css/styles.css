@@ -291,6 +291,7 @@ nav .right i {
     padding: 0 50px;
     margin: 50px 0;
     gap: 50px;
+    margin-bottom: 150px;
 }
 
 .about-me .text {
@@ -375,27 +376,35 @@ nav .right i {
 
 .IA-data .text {
         padding-left: 50px;
+        text-decoration: underline;
+        text-decoration-color: #5f7bcd;
+        margin: 0;
 }
 
 
 .python {
 
-    margin-bottom: 100px;
+    margin-bottom: 140px;
 
 }
 
 .python .text {
         padding-left: 50px;
+        text-decoration: underline;
+        text-decoration-color: #5f7bcd;
+        margin: 0;
 }
 
 .java .text {
         padding-left: 50px;
+        text-decoration: underline;
+        text-decoration-color: #5f7bcd;
+        margin: 0;
 }
 
 
 .java {
-
-    margin-bottom: 100px;
+    margin-bottom: 200px;
 
 }
 
@@ -446,20 +455,10 @@ nav .right i {
     object-fit: cover; /* Recadre l'image pour remplir le conteneur sans déformation */
 }
 
-.slick-prev, .slick-next {
-    display: block !important;
-    z-index: 1; /* S'assurer que les flèches sont au-dessus des autres éléments */
-    background-color: rgba(0, 0, 0, 0.5); /* Ajouter un fond pour les rendre visibles */
-    color: #fff;
-    border-radius: 50%;
-    height: 30px;
-    width: 30px;
-}
-.slick-prev:before, .slick-next:before {
-    color: red; /* Couleur des icônes de flèche */
-}
+
 
 .slick-carousel {
+    margin-top: 15px !important;
     width: 100%; /* Largeur du carrousel */
     height: auto;
     max-width: 1400px; /* Largeur maximale, à ajuster selon vos besoins */
