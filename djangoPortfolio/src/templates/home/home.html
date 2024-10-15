@@ -89,6 +89,7 @@
                 <div class="links">
                     <a href="https://github.com/PikaManon" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i><span> Github</span></a>
             <a href="https://www.linkedin.com/in/manon-samson-436a35254/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i><span> Linkedin</span></a>
+                    <a href="https://medium.com/@pikamanon" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-medium"></i><span> Medium</span></a>
                 </div>
             </div>
             <div class="headshot" style="background-image: url('{% static 'images/logo4.png' %}');">
@@ -151,6 +152,7 @@
               <h1 class="carousel-title">{% translate "Normalisation des scores" %}</h1>
               <img src="{% static 'images/lia.png' %}" alt="Slide 2">
           </div>
+
           <div data-description="<h1> {% blocktrans %}Projet : Transposition de l'EfficientNet à la vérification du locuteur {% endblocktrans %} </h1> </br> </br>
             <p>{% blocktrans %}Lors de ma 2e année de master j'ai effectuée une alternance au Laboratoire Informatique d'Avignon. Dans ce laboratoire, ils travaillent sur la vérification du locuteur : on a deux audio et on doit savoir s'ils proviennent de la même personne ou non. Le modèle état de l'art dans ce domaine est le ResNet, un réseau de neurones qui vient initialement du domaine de l'image.  {% endblocktrans %}</p> </br>
             <p>{% blocktrans %} Un de mes tuteurs m'a donné comme mission de transposer à la vérification du locuteur un autre modèle d'IA dans le domaine de l'image plus récent et performant que le ResNet, afin d'espérer de meilleurs résultats sur nos ensemble de données.{% endblocktrans %} </p> </br>
@@ -158,11 +160,13 @@
             -{% blocktrans %}j'ai lu différents articles scientifiques pour choisir le modèle d'IA. Ma veille technologique s'est conclut sur l'EfficientNet en raison de ses performances et de sa rapidité/légèreté.{% endblocktrans %} </br>
             -{% blocktrans %}En PyTorch, j'ai adapté son architecture au domaine de la vérification du locuteur : en m'inspirant du ResNet, j'ai ajusté les tailles d'entrées et de sortie, modifier et supprimer certaines couches de neurones, tester d'autres méthodes de pooling… {% endblocktrans %}
             </p> </br>
-            <p>{% blocktrans %}Résultat : Malgré tous mes efforts, l'EfficientNet n'est pas arrivé à surpasser les résultats du ResNet. Son architecture ne s'adapte pas aussi bien à la vérification du locuteur. {% endblocktrans %}</p>
-          ">
+            <p>{% blocktrans %}Résultat : Malgré tous mes efforts, l'EfficientNet n'est pas arrivé à surpasser les résultats du ResNet. Son architecture ne s'adapte pas aussi bien à la vérification du locuteur. {% endblocktrans %}</p> </br>
+            <p>{% blocktrans %} Pour en savoir plus sur ce qu'est l'EfficientNet, voici le lien de l'article Medium que j'ai écris sur mon temps libre : {% endblocktrans %} </br> <a class='projects_links' href='https://medium.com/@pikamanon/quest-ce-que-l-efficientnet-17a5a9953470' target='_blank' rel='noopener noreferrer'><span> Qu'est-ce que l'EfficientNet ?</span></a> </p>
+            ">
               <h1 class="carousel-title">{% translate "EfficientNet" %}</h1>
               <img src="{% static 'images/lia.png' %}" alt="Slide 3">
           </div>
+
             <div data-description="
             <h1> {% blocktrans %}Projet : Analyse de sentiments sur AlloCiné {% endblocktrans %} </h1> </br> </br>
             <p>{% blocktrans %}Durant ma première année de master, j'ai effectué plusieurs projets en analyse de sentiments dont un sur les commentaires AlloCine. Une intelligence artificielle va déterminer si un commentaire est positif, négatif ou neutre.{% endblocktrans %}</p> </br>

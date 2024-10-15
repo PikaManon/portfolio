@@ -368,6 +368,16 @@ nav .right i {
 
 /* section projetcs */
 
+.projects_links {
+    color: black;
+    transition: .1s;
+    cursor: pointer;
+}
+
+.projects_links:hover {
+    color: #5f7bcd;
+}
+
 .IA-data {
 
     margin-bottom: 140px;

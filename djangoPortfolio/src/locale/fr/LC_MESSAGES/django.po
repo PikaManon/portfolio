@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-09 14:56+0000\n"
+"POT-Creation-Date: 2024-10-13 09:06+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,34 +22,34 @@ msgstr ""
 msgid "Objet"
 msgstr ""
 
-#: templates/home/home.html:30
+#: templates/home/home.html:33
 msgid "Profil"
 msgstr ""
 
-#: templates/home/home.html:31
+#: templates/home/home.html:34
 msgid "Projets"
 msgstr ""
 
-#: templates/home/home.html:82
+#: templates/home/home.html:85
 msgid "Développeuse / Data Scientist"
 msgstr ""
 
-#: templates/home/home.html:83
+#: templates/home/home.html:86
 msgid ""
 "Forte d'une première expérience professionnelle en intelligence artificielle,"
 msgstr ""
 
-#: templates/home/home.html:83
+#: templates/home/home.html:86
 msgid "curieuse, autonome et flexible,"
 msgstr ""
 
-#: templates/home/home.html:84
+#: templates/home/home.html:87
 msgid ""
 "je suis déterminée à intégrer une équipe et mettre en pratique mes "
 "compétences."
 msgstr ""
 
-#: templates/home/home.html:85
+#: templates/home/home.html:88
 msgid ""
 " Depuis le lycée, j'ai acquis une expertise en Python, notamment en "
 "développement de sites web et en solutions data. Durant mes études, j’ai "
@@ -58,15 +58,15 @@ msgid ""
 "dernières années. "
 msgstr ""
 
-#: templates/home/home.html:105
+#: templates/home/home.html:109
 msgid "Projets IA / Data"
 msgstr ""
 
-#: templates/home/home.html:108
+#: templates/home/home.html:112
 msgid "Projet : Voiture Autonome"
 msgstr ""
 
-#: templates/home/home.html:109
+#: templates/home/home.html:113
 msgid ""
 "Lors de ma première année de master informatique parcours intelligence "
 "artificielle, j'ai choisi comme projet sur l'année de rendre autonome une "
@@ -75,70 +75,70 @@ msgid ""
 "personnes. "
 msgstr ""
 
-#: templates/home/home.html:111
+#: templates/home/home.html:115
 msgid "Nous devions :"
 msgstr ""
 
-#: templates/home/home.html:113
+#: templates/home/home.html:117
 msgid "améliorer la structure de voiture modèle réduit existante,"
 msgstr ""
 
-#: templates/home/home.html:114
+#: templates/home/home.html:118
 msgid ""
 "configurer la Raspberry PI 4 avec notamment les différents langages et "
 "librairies,"
 msgstr ""
 
-#: templates/home/home.html:115
+#: templates/home/home.html:119
 msgid ""
 "accumuler assez de données annotées pour ensuite entraîner des intelligences "
 "artificielles qui permettront à la voiture d'être autonome "
 msgstr ""
 
-#: templates/home/home.html:116
+#: templates/home/home.html:120
 msgid "et obtenir les meilleurs résultats possible."
 msgstr ""
 
-#: templates/home/home.html:118
+#: templates/home/home.html:122
 msgid "Dans ce projet, j'ai participé à "
 msgstr ""
 
-#: templates/home/home.html:119
+#: templates/home/home.html:123
 msgid "la configuration de la voiture,"
 msgstr ""
 
-#: templates/home/home.html:120
+#: templates/home/home.html:124
 msgid ""
 "à l'acquisition et à l'annotation automatique des données sur le circuit "
 "(des images des virages), "
 msgstr ""
 
-#: templates/home/home.html:121
+#: templates/home/home.html:125
 msgid ""
 "j'ai fine-tuné deux modèles de vision par ordinateur pour des tâches de "
 "classification : VGG16 et MobileNet, pré-entraîné sur ImageNet. J'ai pour "
 "cela utilisé Python et ses librairies TensorFlow et Keras."
 msgstr ""
 
-#: templates/home/home.html:122
+#: templates/home/home.html:126
 msgid "Puis j'ai intégrer ces modèles sur la Raspberry PI 4."
 msgstr ""
 
-#: templates/home/home.html:123
+#: templates/home/home.html:127
 msgid "Enfin, pour nous organiser, nous avons utilisé un Diagramme de Gantt."
 msgstr ""
 
-#: templates/home/home.html:125
+#: templates/home/home.html:129
 msgid "Comme résultats:"
 msgstr ""
 
-#: templates/home/home.html:126
+#: templates/home/home.html:130
 msgid ""
 "le MobileNet était bien plus rapide que le VGG16 pour l'inférence sur la "
 "Raspberry PI. (25 au lieu de 69 time per inference step)"
 msgstr ""
 
-#: templates/home/home.html:127
+#: templates/home/home.html:131
 #, python-format
 msgid ""
 "Le MobileNet a obtenu comme meilleurs résultats sur l'ensemble de test : "
@@ -146,21 +146,21 @@ msgid ""
 "droite ou virage à gauche)."
 msgstr ""
 
-#: templates/home/home.html:128
+#: templates/home/home.html:132
 msgid ""
 "L'ajout de la prédiction de la vitesse était prévu pour les prochaines "
 "étapes."
 msgstr ""
 
-#: templates/home/home.html:129
+#: templates/home/home.html:133
 msgid "Voiture Autonome"
 msgstr ""
 
-#: templates/home/home.html:133
+#: templates/home/home.html:137
 msgid "Projet : Normalisation des scores"
 msgstr ""
 
-#: templates/home/home.html:134
+#: templates/home/home.html:138
 msgid ""
 "Lors de ma 2e année de master j'ai effectuée une alternance au Laboratoire "
 "Informatique d'Avignon. Dans ce laboratoire, ils travaillent sur la "
@@ -171,7 +171,7 @@ msgid ""
 "l'apprentissage de l'IA. "
 msgstr ""
 
-#: templates/home/home.html:135
+#: templates/home/home.html:139
 msgid ""
 "Un de mes tuteurs m'a donné comme mission d'explorer de nouvelles techniques "
 "de normalisation des scores de ces systèmes de vérification du locuteur. La "
@@ -181,45 +181,45 @@ msgid ""
 "de petits ensemble de données."
 msgstr ""
 
-#: templates/home/home.html:136
+#: templates/home/home.html:140
 msgid "Ainsi, j'ai : "
 msgstr ""
 
-#: templates/home/home.html:137
+#: templates/home/home.html:141
 msgid ""
 "lu différents articles scientifiques sur des méthodes de normalisation des "
 "scores (AD-Norm, AS-Norm, S-Norm, LLN),"
 msgstr ""
 
-#: templates/home/home.html:138
+#: templates/home/home.html:142
 msgid ""
 "implémenté en python ces méthodes existantes, essayé de les améliorer et "
 "d'en construire de nouvelles en me basant dessus. "
 msgstr ""
 
-#: templates/home/home.html:139
+#: templates/home/home.html:143
 msgid ""
 "J'ai également étudié l'impact du fine-tuning : si la normalisation peut le "
 "remplacer ou le compléter."
 msgstr ""
 
-#: templates/home/home.html:140
+#: templates/home/home.html:144
 msgid ""
 "Enfin, j'ai transposer ces méthodes au domaine de la détection des fake "
 "audio dans le contexte du challenge ASVSpoof2024. "
 msgstr ""
 
-#: templates/home/home.html:142
+#: templates/home/home.html:146
 msgid "Résultats :"
 msgstr ""
 
-#: templates/home/home.html:143
+#: templates/home/home.html:147
 msgid ""
 "Certaines techniques sont plus robuste que d'autres, mais le choix de la "
 "normalisation va quand même dépendre du jeu de données."
 msgstr ""
 
-#: templates/home/home.html:144
+#: templates/home/home.html:148
 #, python-format
 msgid ""
 "La normalisation peut compléter le fine-tuning (on peut obtenir des gains "
@@ -227,15 +227,15 @@ msgid ""
 "normalisation seule."
 msgstr ""
 
-#: templates/home/home.html:148
+#: templates/home/home.html:152
 msgid "Normalisation des scores"
 msgstr ""
 
-#: templates/home/home.html:151
+#: templates/home/home.html:156
 msgid "Projet : Transposition de l'EfficientNet à la vérification du locuteur "
 msgstr ""
 
-#: templates/home/home.html:152
+#: templates/home/home.html:157
 msgid ""
 "Lors de ma 2e année de master j'ai effectuée une alternance au Laboratoire "
 "Informatique d'Avignon. Dans ce laboratoire, ils travaillent sur la "
@@ -245,7 +245,7 @@ msgid ""
 "domaine de l'image.  "
 msgstr ""
 
-#: templates/home/home.html:153
+#: templates/home/home.html:158
 msgid ""
 " Un de mes tuteurs m'a donné comme mission de transposer à la vérification "
 "du locuteur un autre modèle d'IA dans le domaine de l'image plus récent et "
@@ -253,18 +253,18 @@ msgid ""
 "ensemble de données."
 msgstr ""
 
-#: templates/home/home.html:154
+#: templates/home/home.html:159
 msgid "Ainsi,"
 msgstr ""
 
-#: templates/home/home.html:155
+#: templates/home/home.html:160
 msgid ""
 "j'ai lu différents articles scientifiques pour choisir le modèle d'IA. Ma "
 "veille technologique s'est conclut sur l'EfficientNet en raison de ses "
 "performances et de sa rapidité/légèreté."
 msgstr ""
 
-#: templates/home/home.html:156
+#: templates/home/home.html:161
 msgid ""
 "En PyTorch, j'ai adapté son architecture au domaine de la vérification du "
 "locuteur : en m'inspirant du ResNet, j'ai ajusté les tailles d'entrées et de "
@@ -272,22 +272,28 @@ msgid ""
 "méthodes de pooling… "
 msgstr ""
 
-#: templates/home/home.html:158
+#: templates/home/home.html:163
 msgid ""
 "Résultat : Malgré tous mes efforts, l'EfficientNet n'est pas arrivé à "
 "surpasser les résultats du ResNet. Son architecture ne s'adapte pas aussi "
 "bien à la vérification du locuteur. "
 msgstr ""
 
-#: templates/home/home.html:160
+#: templates/home/home.html:164
+msgid ""
+" Pour en savoir plus sur ce qu'est l'EfficientNet, voici le lien de "
+"l'article Medium que j'ai écris sur mon temps libre : "
+msgstr ""
+
+#: templates/home/home.html:166
 msgid "EfficientNet"
 msgstr ""
 
-#: templates/home/home.html:164
+#: templates/home/home.html:171
 msgid "Projet : Analyse de sentiments sur AlloCiné "
 msgstr ""
 
-#: templates/home/home.html:165
+#: templates/home/home.html:172
 msgid ""
 "Durant ma première année de master, j'ai effectué plusieurs projets en "
 "analyse de sentiments dont un sur les commentaires AlloCine. Une "
@@ -295,19 +301,19 @@ msgid ""
 "négatif ou neutre."
 msgstr ""
 
-#: templates/home/home.html:166
+#: templates/home/home.html:173
 msgid " Les corpus de données étaient fournis (dev, train, test). "
 msgstr ""
 
-#: templates/home/home.html:167
+#: templates/home/home.html:174
 msgid "Je devais ainsi :"
 msgstr ""
 
-#: templates/home/home.html:168
+#: templates/home/home.html:175
 msgid " nettoyer et analyser les bases de données utilisés,  "
 msgstr ""
 
-#: templates/home/home.html:169
+#: templates/home/home.html:176
 msgid ""
 "  mettre en place plusieurs modèles, qu'ils soient à base de connaissance "
 "(lexique de sentiment qui va permettre de calculer le score d'un document en "
@@ -316,35 +322,35 @@ msgid ""
 "apprentissage supervisé),  "
 msgstr ""
 
-#: templates/home/home.html:170
+#: templates/home/home.html:177
 msgid " et atteindre les meilleurs résultats possibles. "
 msgstr ""
 
-#: templates/home/home.html:172
+#: templates/home/home.html:179
 msgid ""
 " J'ai ainsi préparées les données en supprimant tout ce qui est jugé comme "
 "non pertinent pour cette tâche : "
 msgstr ""
 
-#: templates/home/home.html:173
+#: templates/home/home.html:180
 msgid " j'ai enlevé les lignes qui contiennent trop d'informations manquantes,"
 msgstr ""
 
-#: templates/home/home.html:174
+#: templates/home/home.html:181
 msgid " j'ai enlevé les lignes dont le commentaire n'était pas en français,"
 msgstr ""
 
-#: templates/home/home.html:175
+#: templates/home/home.html:182
 msgid " j'ai supprimé les accents, la casse, la ponctuation..."
 msgstr ""
 
-#: templates/home/home.html:176
+#: templates/home/home.html:183
 msgid ""
 " j'ai procédé si besoin à des étapes de tokenisation, stemming, "
 "lemmatisation..."
 msgstr ""
 
-#: templates/home/home.html:177
+#: templates/home/home.html:184
 msgid ""
 " J'ai analysé les données via le logiciel ElasticSearch afin d'observer la "
 "distribution des données, s'assurer que les classes étaient bien "
@@ -353,29 +359,29 @@ msgid ""
 "seaborn."
 msgstr ""
 
-#: templates/home/home.html:178
+#: templates/home/home.html:185
 msgid " J'ai utilisé : "
 msgstr ""
 
-#: templates/home/home.html:179
+#: templates/home/home.html:186
 msgid ""
 " un SVM (Support Vector Machine) avec des données sous forme de sacs de mots "
 "pondérés par les scores TF-IDF (Term Frequency-Inverse Document Frequency), "
 msgstr ""
 
-#: templates/home/home.html:180
+#: templates/home/home.html:187
 msgid ""
 " un CNN (Convolutional Neural Network) dont les données sont sous forme de "
 "plongements lexicaux (word embeddings, word2vec, skip-gram)"
 msgstr ""
 
-#: templates/home/home.html:181
+#: templates/home/home.html:188
 msgid ""
 " et un CamemBERT (camembert-base sur HuggingFace) fine-tuné sur les données "
 "d'AlloCiné"
 msgstr ""
 
-#: templates/home/home.html:183
+#: templates/home/home.html:190
 #, python-format
 msgid ""
 "Le modèle le plus performant est CamemBERT puis vient le SVM et enfin le "
@@ -386,15 +392,15 @@ msgid ""
 "d'autres configurations. "
 msgstr ""
 
-#: templates/home/home.html:185
+#: templates/home/home.html:192
 msgid "Analyse de sentiments"
 msgstr ""
 
-#: templates/home/home.html:188
+#: templates/home/home.html:195
 msgid " Participation aux 24h pour coder"
 msgstr ""
 
-#: templates/home/home.html:189
+#: templates/home/home.html:196
 msgid ""
 "Sur mon temps libre, durant la 2e année de mon master en informatique, j'ai "
 "participé au 24h pour coder 2e édition organisé par le BDE de mon "
@@ -402,7 +408,7 @@ msgid ""
 "application contenant une intelligence artificielle."
 msgstr ""
 
-#: templates/home/home.html:190
+#: templates/home/home.html:197
 msgid ""
 "Avec mon équipe, 'Les Lovelaces' nous avons choisi de réaliser 'Learn Mate' "
 "une interface web (ReactJS pour le front, NodeJS pour le back et API en "
@@ -412,7 +418,7 @@ msgid ""
 "étudiants de toutes disciplines et permettre un entraînement personnalisé. "
 msgstr ""
 
-#: templates/home/home.html:191
+#: templates/home/home.html:198
 msgid ""
 "J'ai été en charge de la partie IA.\n"
 "J'ai choisi et mis en place deux modèles d'intelligence artificielle depuis "
@@ -420,7 +426,7 @@ msgid ""
 "une deuxième (t5-base-question-generator) qui génère les questions/réponses."
 msgstr ""
 
-#: templates/home/home.html:193
+#: templates/home/home.html:200
 msgid ""
 " En mettant en pratique mes connaissances en Python et en IA, j'ai obtenu la "
 "2e place avec mon équipe. Evidemment, dû au peu de temps imparti, nous "
@@ -430,19 +436,19 @@ msgid ""
 "à l'oral."
 msgstr ""
 
-#: templates/home/home.html:195
+#: templates/home/home.html:202
 msgid "24h pour coder"
 msgstr ""
 
-#: templates/home/home.html:266
+#: templates/home/home.html:273
 msgid "Projets Python"
 msgstr ""
 
-#: templates/home/home.html:269
+#: templates/home/home.html:276
 msgid " Projet : Toolkit en vérification du locuteur "
 msgstr ""
 
-#: templates/home/home.html:270
+#: templates/home/home.html:277
 msgid ""
 "Lors de ma 2e année de master informatique j'ai effectuée une alternance au "
 "Laboratoire Informatique d'Avignon. Dans ce laboratoire, ils travaillent sur "
@@ -450,7 +456,7 @@ msgid ""
 "proviennent de la même personne ou non."
 msgstr ""
 
-#: templates/home/home.html:271
+#: templates/home/home.html:278
 msgid ""
 "Un de mes tuteurs m'a donné comme mission de participer à la mise en place "
 "d'un toolkit en Python permettant un cadre unifié dans lequel chaque "
@@ -464,101 +470,101 @@ msgid ""
 "locuteur."
 msgstr ""
 
-#: templates/home/home.html:272
+#: templates/home/home.html:279
 msgid ""
 "Ainsi, j'ai implémenté plusieurs fonctions en Python, tout en respectant les "
 "bonnes pratiques de développement : mise en place de design pattern, "
 "optimisation du code… "
 msgstr ""
 
-#: templates/home/home.html:273
+#: templates/home/home.html:280
 msgid " Des algorithmes : "
 msgstr ""
 
-#: templates/home/home.html:274
+#: templates/home/home.html:281
 msgid " qui téléchargeaient et traitaient automatiquement des données audio, "
 msgstr ""
 
-#: templates/home/home.html:275
+#: templates/home/home.html:282
 msgid " qui vérifient le bon téléchargement via les fonctions de hachage,"
 msgstr ""
 
-#: templates/home/home.html:276
+#: templates/home/home.html:283
 msgid " d'autres qui calculaient des statistiques sur ces données"
 msgstr ""
 
-#: templates/home/home.html:277
+#: templates/home/home.html:284
 msgid ""
 " et d'autres encore qui permettaient de visualiser ces données grâce à la "
 "bibliothèque MatPlotLib."
 msgstr ""
 
-#: templates/home/home.html:278
+#: templates/home/home.html:285
 msgid ""
 " J'ai également mis en place une documentation de ce toolkit et le code "
 "était mis sur Git."
 msgstr ""
 
-#: templates/home/home.html:280
+#: templates/home/home.html:287
 msgid ""
 "Résultat : J'ai pu mener à bien ce projet de toolkit, il a été fini dans les "
 "temps : j'avais le semestre pour le terminer."
 msgstr ""
 
-#: templates/home/home.html:282
+#: templates/home/home.html:289
 msgid "Toolkit en vérification du locuteur"
 msgstr ""
 
-#: templates/home/home.html:286
+#: templates/home/home.html:293
 msgid " Projet : Compilateur Mini-Pascal "
 msgstr ""
 
-#: templates/home/home.html:287
+#: templates/home/home.html:294
 msgid ""
 " Durant ma 3e année de licence informatique, j'ai eu un cours consistant en "
 "un projet d'un semestre visant à mettre en place un compilateur mini-Pascal "
 "en Python. "
 msgstr ""
 
-#: templates/home/home.html:288
+#: templates/home/home.html:295
 msgid ""
 " Le but était qu'à partir d'un code en mini-Pascal, un compilateur Python le "
 "transforme en pseudo-code intermédiaire. "
 msgstr ""
 
-#: templates/home/home.html:289
+#: templates/home/home.html:296
 msgid ""
 " En m'appuyant sur les cours théoriques reçues, j'ai notamment mis en "
 "place : "
 msgstr ""
 
-#: templates/home/home.html:290
+#: templates/home/home.html:297
 msgid " la grammaire,  "
 msgstr ""
 
-#: templates/home/home.html:291
+#: templates/home/home.html:298
 msgid " l'analyse lexicale,  "
 msgstr ""
 
-#: templates/home/home.html:292
+#: templates/home/home.html:299
 msgid " l'analyse syntaxique "
 msgstr ""
 
-#: templates/home/home.html:293
+#: templates/home/home.html:300
 msgid " et l'analyse sémantique,"
 msgstr ""
 
-#: templates/home/home.html:294
+#: templates/home/home.html:301
 msgid " le traducteur qui génère le code intermédiaire"
 msgstr ""
 
-#: templates/home/home.html:295
+#: templates/home/home.html:302
 msgid ""
 " et le gestionnaire d'erreurs qui détecte les erreurs lexicales, syntaxiques "
 "ou sémantiques."
 msgstr ""
 
-#: templates/home/home.html:296
+#: templates/home/home.html:303
 msgid ""
 " J'ai ainsi implémenté plusieurs classes et fonctions en Python pour gérer "
 "toutes ces étapes du processus de compilation comme des fonctions pour "
@@ -566,21 +572,21 @@ msgid ""
 "de plusieurs structures de données comme les tables de hachage. "
 msgstr ""
 
-#: templates/home/home.html:298
+#: templates/home/home.html:305
 msgid ""
 " Je suis arrivée à terminer le compilateur dans le temps impartis, il "
 "fonctionnait correctement. "
 msgstr ""
 
-#: templates/home/home.html:300
+#: templates/home/home.html:307
 msgid "Compilateur"
 msgstr ""
 
-#: templates/home/home.html:303
+#: templates/home/home.html:310
 msgid " Participation aux Capture The Flag "
 msgstr ""
 
-#: templates/home/home.html:304
+#: templates/home/home.html:311
 msgid ""
 " Durant l'été entre ma licence et mon master, j'ai rejoins une équipe, "
 "ForPlaizAndLulz, afin de participer à des Capture The Flag, des compétitions "
@@ -589,7 +595,7 @@ msgid ""
 "fois qu'est trouvé le drapeau, un code secret caché. "
 msgstr ""
 
-#: templates/home/home.html:305
+#: templates/home/home.html:312
 msgid ""
 " Les défis d'une compétitions sont répartis entre chaque membre afin d'en "
 "gagner le plus possible. Je me suis portée volontaire pour les défis en lien "
@@ -597,15 +603,15 @@ msgid ""
 "en forensic. "
 msgstr ""
 
-#: templates/home/home.html:306
+#: templates/home/home.html:313
 msgid " J'ai participé aux CTF suivant : "
 msgstr ""
 
-#: templates/home/home.html:310
+#: templates/home/home.html:317
 msgid " et le Google CTF "
 msgstr ""
 
-#: templates/home/home.html:311
+#: templates/home/home.html:318
 msgid ""
 " Pour résoudre les défis j'ai souvent mis en place des scripts Python, "
 "notamment pour déchiffrer des codes secrets dans les défis de cryptographie. "
@@ -614,7 +620,7 @@ msgid ""
 "engineering avec le logiciel Ghidra. "
 msgstr ""
 
-#: templates/home/home.html:313
+#: templates/home/home.html:320
 msgid ""
 " Évidemment, j'ai relevé certains défis avec succès, tandis que d'autres "
 "m'ont échappé. Lorsque je n'arrivais pas à résoudre un défi dans les temps, "
@@ -622,19 +628,19 @@ msgid ""
 "d'autres participants. "
 msgstr ""
 
-#: templates/home/home.html:315
+#: templates/home/home.html:322
 msgid "Capture the Flag"
 msgstr ""
 
-#: templates/home/home.html:334
+#: templates/home/home.html:341
 msgid "Projets Java"
 msgstr ""
 
-#: templates/home/home.html:337
+#: templates/home/home.html:344
 msgid " Projet : Logiciel de réservation de séjours "
 msgstr ""
 
-#: templates/home/home.html:338
+#: templates/home/home.html:345
 msgid ""
 "Durant ma première année de master en informatique, j'ai dû réaliser un "
 "projet de logiciel de réservation de séjours en JavaFX, en binôme. Cette "
@@ -645,28 +651,28 @@ msgid ""
 "supplémentaires."
 msgstr ""
 
-#: templates/home/home.html:339
+#: templates/home/home.html:346
 msgid "Le but était d'obtenir une application capable de :"
 msgstr ""
 
-#: templates/home/home.html:340
+#: templates/home/home.html:347
 msgid ""
 " afficher une liste des séjours et permettre des recherches efficaces,  "
 msgstr ""
 
-#: templates/home/home.html:341
+#: templates/home/home.html:348
 msgid ""
 " gérer l'authentification et proposer des fonctions personnalisées selon le "
 "type d'utilisateur,  "
 msgstr ""
 
-#: templates/home/home.html:342
+#: templates/home/home.html:349
 msgid ""
 " permettre aux utilisateurs de gérer leurs réservations et aux hôtes de "
 "gérer leurs séjours à confirmer.  "
 msgstr ""
 
-#: templates/home/home.html:343
+#: templates/home/home.html:350
 msgid ""
 " J'ai notamment été chargée de la structure de l'interface, de la gestion "
 "des réservations côté voyageur et hôte et de la parallélisation, tandis que "
@@ -675,34 +681,34 @@ msgid ""
 "recherche.  "
 msgstr ""
 
-#: templates/home/home.html:345
+#: templates/home/home.html:352
 msgid ""
 "Nous avons ainsi réalisé le front-end et le back-end de cette application en "
 "mettant en place :"
 msgstr ""
 
-#: templates/home/home.html:346
+#: templates/home/home.html:353
 msgid ""
 " une recherche qui fonctionne par date et/ou recherche textuelle dès 2 "
 "caractères sur les noms des voyages, les villes et les pays. Nous avons "
 "parallélisé cette recherche pour plus de fluidité. "
 msgstr ""
 
-#: templates/home/home.html:347
+#: templates/home/home.html:354
 msgid ""
 " Un système d’authentification qui vérifie les informations utilisateur par "
 "rapport à une base de données, avec un message d’erreur en cas de non-"
 "correspondance. "
 msgstr ""
 
-#: templates/home/home.html:348
+#: templates/home/home.html:355
 msgid ""
 " Pour les voyageurs connectés, des options d’ajout au panier, de "
 "visualisation des détails des séjours, de commentaires sur les séjours, et "
 "une page de gestion du panier et possibilité de valider ses réservations."
 msgstr ""
 
-#: templates/home/home.html:349
+#: templates/home/home.html:356
 msgid ""
 " Pour les hôtes, une page de récapitulatif des séjours, permettant de "
 "visualiser et de gérer les séjours en attente de confirmation ou refusés, "
@@ -710,12 +716,12 @@ msgid ""
 "séjours. "
 msgstr ""
 
-#: templates/home/home.html:350
+#: templates/home/home.html:357
 msgid ""
 " Nous avons utilisé GitHub pour assurer le versionning de l'application. "
 msgstr ""
 
-#: templates/home/home.html:352
+#: templates/home/home.html:359
 msgid ""
 " Nous avons atteint les objectifs requis dans les temps. L'expérience "
 "utilisateur est fluide et personnalisée. Elle est persistante, permettant de "
@@ -725,29 +731,29 @@ msgid ""
 "différents types d’utilisateurs."
 msgstr ""
 
-#: templates/home/home.html:354
+#: templates/home/home.html:361
 msgid "Logiciel de réservation de séjours"
 msgstr ""
 
-#: templates/home/home.html:358
+#: templates/home/home.html:365
 msgid " Projet : jeu d'échec "
 msgstr ""
 
-#: templates/home/home.html:359
+#: templates/home/home.html:366
 msgid ""
 " J'ai appris le Java en licence d'informatique à l'université d'Aix "
 "Marseille. Une fois maîtrisé, j'ai eu un cours consistant en un projet d'un "
 "semestre visant à mettre en place un jeu d'échecs."
 msgstr ""
 
-#: templates/home/home.html:360
+#: templates/home/home.html:367
 msgid ""
 " Le front-end était déjà fourni (l'interface, les images des pions), je "
 "devais alors mettre en place le back-end : comment déplacer les différents "
 "pions, déterminer le gagnant etc"
 msgstr ""
 
-#: templates/home/home.html:361
+#: templates/home/home.html:368
 msgid ""
 " J'ai alors implémenté différentes classes, fonctions, mis en place des "
 "design pattern adaptés, ainsi que des tests pour vérifier le bon "
@@ -756,21 +762,21 @@ msgid ""
 "un ensemble de règles, donc sans réseau de neurones."
 msgstr ""
 
-#: templates/home/home.html:362 templates/home/home.html:375
+#: templates/home/home.html:369 templates/home/home.html:382
 msgid ""
 " J'ai ainsi terminé le jeu dans le temps impartis, il fonctionnait "
 "correctement. "
 msgstr ""
 
-#: templates/home/home.html:364
+#: templates/home/home.html:371
 msgid "Jeu d'échec"
 msgstr ""
 
-#: templates/home/home.html:367
+#: templates/home/home.html:374
 msgid " Projet : jeu d'arcade "
 msgstr ""
 
-#: templates/home/home.html:368
+#: templates/home/home.html:375
 msgid ""
 " J'ai appris le Java en licence d'informatique à l'université d'Aix "
 "Marseille. Une fois maîtrisé, j'ai eu un cours consistant en un projet d'un "
@@ -780,45 +786,45 @@ msgid ""
 "en vie durant le temps imparti."
 msgstr ""
 
-#: templates/home/home.html:369
+#: templates/home/home.html:376
 msgid ""
 " Le front-end était déjà fourni (l'interface, l'image du vaisseau), je "
 "devais alors mettre en place le back-end : comment déplacer le vaisseau "
 "spatial, déterminer la fin de partie..."
 msgstr ""
 
-#: templates/home/home.html:370
+#: templates/home/home.html:377
 msgid ""
 " J'ai alors implémenté différentes classes, fonctions, ainsi que des tests "
 "pour vérifier le bon fonctionnement du jeu. J'ai mis en place :"
 msgstr ""
 
-#: templates/home/home.html:371
+#: templates/home/home.html:378
 msgid "un timer, "
 msgstr ""
 
-#: templates/home/home.html:372
+#: templates/home/home.html:379
 msgid "la génération aléatoire d'astéroïdes,"
 msgstr ""
 
-#: templates/home/home.html:373
+#: templates/home/home.html:380
 msgid ""
 "j'ai pris en compte les lois de la physique pour le comportement du vaisseau "
 "spatial lors de ses déplacements..."
 msgstr ""
 
-#: templates/home/home.html:377
+#: templates/home/home.html:384
 msgid "Jeu d'arcade"
 msgstr ""
 
-#: templates/home/home.html:402
+#: templates/home/home.html:409
 msgid "Pour tous renseignements complémentaires : "
 msgstr ""
 
-#: templates/home/home.html:402
+#: templates/home/home.html:409
 msgid "contactez-moi !"
 msgstr ""
 
-#: templates/home/home.html:410
+#: templates/home/home.html:417
 msgid "Envoyez !"
 msgstr ""
